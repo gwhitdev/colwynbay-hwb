@@ -9,26 +9,26 @@
     --cus-orange: #F29222 /*Orange*/;
     --cus-red: #E95E50 /*Red*/;
     --cus-purple: #936FAC /*Purple*/;
+    --primary-font: "Londrina", sans-serif;
+    --secondary-font: "Ferdoka", sans-serif;
     
 }
-
-
-
-
-
-
-
 
 /* Globals */
 h1,
 h2,
 h3,
 h4 {
-    font-family: Fredoka, sans-serif;
+    font-family: var(--primary-font);
+    color: var(--cus-purple);
+}
+
+.mainheading {
+    font-family: var(--primary-font);
 }
 
 .subheading {
-    font-family: Fredoka, sans-serif;
+    font-family: var(--secondary-font);
     font-size: 2rem;
 }
 
