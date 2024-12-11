@@ -1,6 +1,23 @@
 /*Google Fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&family=Londrina+Shadow&display=swap');
 
+/* Variables */
+:root {
+    --cus-blue:     #0CB2AF /*Blue*/;
+    --cus-green: #A1C65D /*Green*/;
+    --cus-yellow: #FAC723 /*Yellow*/;
+    --cus-orange: #F29222 /*Orange*/;
+    --cus-red: #E95E50 /*Red*/;
+    --cus-purple: #936FAC /*Purple*/;
+    
+}
+
+
+
+
+
+
+
 
 /* Globals */
 h1,
