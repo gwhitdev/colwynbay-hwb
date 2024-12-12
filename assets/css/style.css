@@ -87,7 +87,8 @@ header i {
     color: var(--cus-purple);
 }
 #logo {
-    color: black;
+    font-family: var(--solid-primary-font);
+    color: var(--cus-purple);
 }
 nav {
     position: absolute;
