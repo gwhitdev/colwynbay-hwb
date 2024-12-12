@@ -1,5 +1,5 @@
 /*Google Fonts import*/
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&family=Londrina+Solid:wght@100;300;400;900&family=Londrina+Shadow&display=swap');
 
 /* Variables */
 :root {
@@ -9,8 +9,11 @@
     --cus-orange: #F29222 /*Orange*/;
     --cus-red: #E95E50 /*Red*/;
     --cus-purple: #936FAC /*Purple*/;
+    --solid-primary-font: "Londrina Solid", sans-serif;
     --primary-font: "Londrina Shadow", sans-serif;
     --secondary-font: "Fredoka", sans-serif;
+    --cus-purple-rgb: 147, 111, 172;
+    --cus-orange-rgb: 242, 146, 34;
     
 }
 
@@ -20,7 +23,10 @@ h2,
 h3,
 h4 {
     font-family: var(--primary-font);
-    color: var(--cus-purple);
+}
+
+h2 {
+    font-size: 2.75rem;
 }
 
 .mainheading {
@@ -44,12 +50,10 @@ h4 {
 }
 body { 
     min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: var(--cus-purple); 
     font-family: var(--secondary-font);
     display: flex;
     flex-direction: column;
+    background-color: var(--cus-purple);
 }
 
 /* Flex Container */
@@ -61,9 +65,6 @@ body {
     display: flex;
     flex-direction: row;
 }
-
-
-
 
 /* Header */
 header {
@@ -85,7 +86,9 @@ header a {
 header i {
     color: var(--cus-purple);
 }
-
+#logo {
+    color: black;
+}
 nav {
     position: absolute;
     color: var(--cus-purple);
@@ -133,14 +136,26 @@ nav {
 }
 
 #cover-text {
-    background-color: var(--cus-purple,0.6);
-    font-size: 2.75rem;
+    background-color: rgba(var(--cus-purple-rgb),0.6);
+    /*background-color: rgba(0,0,0,0.4);*/
     position: absolute;
-    bottom: 40%;
-    width: 80%;
-    min-height: 200px;
+    top: 100px;
+    width: 75%;
+    min-height: 20vh;
     padding-left: 10px;
-    color:white;
+    padding-right: 25px;
+    
+}
+
+#cover-title {
+    font-size: 2.75rem;
+    color: white;
+    line-height: 38px;
+    padding-top: 5px;
+    font-family: var(--solid-primary-font);
+    font-weight: 400;
+    
+
 }
 
 
@@ -171,7 +186,7 @@ nav {
 
 /* Carousel */
 .carousel {
-    z-index:100;
+    z-index:97;
     position: absolute;
     top: 70vh;
     margin: 40px auto;
@@ -232,7 +247,7 @@ nav {
     width: 100%;
     background-color: var(--cus-orange);
     text-align: left;
-    margin-bottom: 100px;
+    margin-bottom: 1px;
 }
 
 .latest-news h2 {
@@ -263,9 +278,20 @@ nav {
 /* Opening Times */
 #opening-times {
     background-color: var(--cus-purple);
-    height: 50vh;
-
+    min-height: 50vh;
+    color: white;
+    
+    text-align: center;
+    padding-top: 25px;
 }
+#opening-times > h2 {
+    font-weight: bold;
+}
+#times {
+    margin-top: 10px;
+}
+
+
 /* Footer */
 footer {
     width: 100%;
