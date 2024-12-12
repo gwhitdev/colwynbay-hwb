@@ -1,5 +1,6 @@
 # **Colwyn Bay Hwb**
 ## **Site Overview**
+The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a week, 52 days a year. It is a project in its early stages but has already made progress in developing services and opportunities for local people. However, as with most new ventures, publicity can be difficult to achieve - especially with limited charitable resources available. This website serves as a source of key information for current and new users of the Hwb. It is intended to be a well designed and easy to use lightweight publicity platform and portal.
 
 ![Am I responsive screenshot](docs/screenshots/am-i-responsive.jpg)
 ## Table of contents:
@@ -152,7 +153,7 @@
 * [Richard Wells](https://github.com/D0nni387) - Code Institute Mentor who has gone above and beyond what was expected of him to help me get this far in the course.
 
 
-### **General reference:**
+### **References:**
 
 
 ### **Content:**
@@ -170,4 +171,7 @@
 * Color grid contract tool - [Eightshapes](https://contrast-grid.eightshapes.com/) 
 
 * Calculator used to resize figure images on teachings page -[Aspect Ratio Calculator](https://andrew.hedges.name/experiments/aspect_ratio/)
+
+### **Other*:*
+* Original inspiration for the carousel feature: [W3Schools](https://www.w3schools.com/howto/howto_js_slideshow.asp)
 
