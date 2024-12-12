@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colwyn Bay Community Hwb and Foodbank</title>
+    
+    
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -44,7 +46,22 @@
                 
             </div>
             <div class="carousel">
-                <img src="assets/images/468324613_122267218016002860_3882894567622170301_n.jpg">
+                <div class="slides fade">
+                    <img src="assets/images/468324613_122267218016002860_3882894567622170301_n.jpg" style="width:80%;">    
+                </div>
+                <div class="slides fade">
+                    <img src="assets/images/454735621_122240727518002860_7492894630105984710_n.jpg" style="width:80%;">
+                </div>
+                <div class="slides fade">
+                    <img src="assets/images/469111474_122269146176002860_1941981137026856415_n.jpg" style="width:80%;">
+                </div>
+                <div id="carousel-buttons">
+                    <!-- Carousel Buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                
+                
             </div>
             <div class="latest-news">
                 <h2>Latest News...</h2>
@@ -54,5 +71,35 @@
             </footer>
     </div>
     <script src="https://kit.fontawesome.com/913e9b68dc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        
+        slides[slideIndex-1].style.display = "flex";
+        
+        }
+    </script>
+        
 </body>
 </html>

@@ -167,11 +167,45 @@ nav {
 
 /* Carousel */
 .carousel {
-    z-index:100;
-    display: flex;
-    justify-content: center;
+    z-index:98;
     position: absolute;
     top: 90vh;
+    max-width: 100vw;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.slides {
+    display: none;
+    justify-content: center;
+    
+}
+
+.next, .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 .carousel img {
