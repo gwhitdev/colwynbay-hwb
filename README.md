@@ -15,19 +15,12 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
 1. [**Current Features Common to all pages**](#current-features-common-to-all-pages)
     * [***Header Element:***](#header-element)
         * [*Title*](#title)
-        * [*Logos*](#logos)
         * [*Navigation Bar*](#navigation-bar)
     * [**Hero Images:**](#hero-images)
       * [***About Page***:](#about-page)
           * [*Hero-Image*](#hero-image)
           * [*Quote*](#quote)
-      * [***Teachings page***:](#teachings-page)
-          * [*Hero-Image*](#hero-image-1)
-          * [*Quote*](#quote-1)
-      * [***Community page:***](#community-page)
-          * [*Hero-Image*](#hero-image-2)
-          * [*Quote*](#quote-2)
-      * [***Contact and Form-Feedback pages:***](#contact-and-form-feedback-pages)
+      * [***Contact and Form Thank You pages:***](#contact-and-form-feedback-pages)
           * [*Hero-Image*](#hero-image-3)
           * [*Quote*](#quote-3)
     * [**Anchor Tags Within all Pages Main Content**](#anchor-tags-within-all-pages-main-content)
@@ -38,7 +31,8 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
     * [**Teachings Page Content**](#teachings-page-content)
     * [**Community Page Content**](#community-page-content)
     * [**Contact Page Content**](#contact-page-content)
-    * [**Form Feedback Page Content**](#form-feedback-page-content)
+    * [**Form Thank You Page Content**](#form-feedback-page-content)
+1. [**Miscellaneous Pages**](#miscellanous-pages)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
@@ -122,6 +116,7 @@ I have removed the colour groups that do not pass at least the grade of AA18 fro
 
 
 ## **Future Enhancements**
+## **Miscellanous Pages**
 
 ***
 ## **Testing Phase**
