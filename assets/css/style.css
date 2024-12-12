@@ -47,7 +47,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--cus-purple); 
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     display: flex;
     flex-direction: column;
 }
@@ -129,16 +129,16 @@ nav {
     height: 60vh;
     background: url('/assets/images/Sunset_over_Colwyn_Bay.jpg') no-repeat center center / cover;
     position: relative;
+   
 }
 
 #cover-text {
     background-color: var(--cus-purple,0.6);
-    font-size: 4rem;
+    font-size: 2.75rem;
     position: absolute;
-    bottom: 50%;
-    width: 70%;
+    bottom: 40%;
+    width: 80%;
     min-height: 200px;
-    padding-top: 10px;
     padding-left: 10px;
     color:white;
 }
@@ -147,19 +147,61 @@ nav {
 
 
 /* Welcome Message */
+.welcome-message {
+    height: 40vh;
+    width: 100%;
+    background-color: var(--cus-purple);
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
 
+.welcome-message p {
+   color: white;
+   text-align: center;
+   font-size: 1rem;
+   padding: 10px 50px;
+}
 
 
 
 
 /* Carousel */
+.carousel {
+    z-index:100;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90vh;
+}
 
+.carousel img {
+    
+    width: 40%;
+}
 
+/* Latest News */
+.latest-news {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--cus-orange);
+    text-align: center;
+}
 
+.latest-news h2 {
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    margin-top: 100px;
+}
 
 
 /* Footer */
-
+footer {
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    position: relative;
+}
 
 /* MEDIA QUERIES */
 
@@ -193,11 +235,17 @@ nav {
 
     #cover-text {
         bottom: 40%;
+        font-size: 4.5rem;
     }
 }
 
 @media screen and (min-width: 922px) {
-    
+    #cover-text {
+        bottom: 30%;
+        font-size: 5rem;
+        width: 45%;
+        padding-left: 50px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
