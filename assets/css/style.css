@@ -92,7 +92,7 @@ nav {
     font-family: var(--secondary-font);
     display: none;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background-color: white;
     top: 100%;
 }
@@ -238,10 +238,15 @@ nav {
     color: black;
     font-family: var(--primary-font);
     font-size: 2.75rem;
-    margin-top: 450px;
+    margin-top: 350px;
 }
 
+/* Opening Times */
+#opening-times {
+    background-color: var(--cus-purple);
+    height: 50vh;
 
+}
 /* Footer */
 footer {
     width: 100%;
