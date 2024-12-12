@@ -159,8 +159,6 @@ nav {
 }
 
 
-
-
 /* Welcome Message */
 .welcome-message {
     height: 40vh;
@@ -180,7 +178,8 @@ nav {
 }
 
 .welcome-message p:first-child {
-    padding-top: 20px
+    padding-top: 20px;
+    font-weight: 600;
 }
 
 
