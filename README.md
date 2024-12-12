@@ -58,7 +58,7 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
 ### **Site Aims:**
 
 
-### **How Is This Will Be Achieved:**
+### **How this will be achieved:**
 
 
 
@@ -67,6 +67,7 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
 
 
 * Mobile Wireframes:
+    * [Home Page](docs/wireframes/landing-mobile-wireframe.png)
 
 
 * Desktop wireframes:
@@ -74,17 +75,15 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
 
 
 ### **Color Scheme:**
-![Color contrast grid](docs/screenshots/color-grid.png)
+I have removed the colour groups that do not pass at least the grade of AA18 from the grid below.
+
+![Color contrast grid](docs/screenshots/contrast-grid.png)
 
 ## **Current Features Common to all pages**
 ###  **Header Element**
 
 #### *Title:*
 ![Page title](docs/screenshots/title.jpg)
-
-
-
-#### *Logos:*
 
 
 #### *Navigation Bar:*
@@ -94,26 +93,10 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
 
 
 ### **About Page**:
-#### *Hero-Image:*
 
 
+### **Contact and Form Feedback pages:**
 
-### **Teachings page**:
-#### *Hero-Image:*
-
-
-
-
-### **Community page:**
-#### *Hero-Image:*
-
-
-
-
-### **Contact and Form-Feedback pages:**
-
-
-#### *Hero-Image:*
 
 
 
@@ -138,7 +121,7 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
 ### **Contact Page Content**
 
 
-## **Future-Enhancements**
+## **Future Enhancements**
 
 ***
 ## **Testing Phase**
@@ -148,7 +131,7 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
 
 ***
 ## **Credits**
-### **Honorable mentions**
+### **Thank yous**
 
 * [Richard Wells](https://github.com/D0nni387) - Code Institute Mentor who has gone above and beyond what was expected of him to help me get this far in the course.
 
@@ -166,11 +149,11 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
 
 * Images requiring compression were done using - [tiny.png](https://tinypng.com) 
 
-* Screenshot under README.md section titled "site overview" was created view [Am I responsive](http://ami.responsivedesign.is)
+* Screenshot under README.md section titled "site overview" was created view [Am I responsive](https://ui.dev/amiresponsive?url=https://gwhitdev.github.io/colwynbay-hwb/)
 
 * Color grid contract tool - [Eightshapes](https://contrast-grid.eightshapes.com/) 
 
-* Calculator used to resize figure images on teachings page -[Aspect Ratio Calculator](https://andrew.hedges.name/experiments/aspect_ratio/)
+* Calculator used to resize figure images -[Aspect Ratio Calculator](https://andrew.hedges.name/experiments/aspect_ratio/)
 
 ### **Other*:*
 * Original inspiration for the carousel feature: [W3Schools](https://www.w3schools.com/howto/howto_js_slideshow.asp)
