@@ -152,16 +152,19 @@ nav {
 
 @media screen and (min-width: 768px) {
     nav {
-        display: block;
+        display: flex;
         position: relative;
-        
         padding-right: 1rem;
-       
+        justify-content: flex-end;
+
     }
     #menu {
         display: flex;
-        
+        font-size: 1rem;
 
+    }
+    #menu > li {
+        margin: 0;
     }
     .nav-toggle-label {
         display: none;
