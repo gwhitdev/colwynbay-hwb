@@ -113,9 +113,9 @@
                 </p>
             </section>
             <div class="carousel">
-                <div class="slides" id="slide-1"></div>
-                <div class="slides" id="slide-2"></div>
-                <div class="slides" id="slide-3"></div>
+                <div class="slides fade" id="slide-1"></div>
+                <div class="slides fade" id="slide-2"></div>
+                <div class="slides fade" id="slide-3"></div>
                 <div id="carousel-buttons">
                     <!-- Carousel Buttons -->
                     <a class="prev" id="previousArrow">&#10094;</a>
@@ -175,7 +175,6 @@
 
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
-                slides[i].classList.add('fade');
             };
             
             // Set the slides divs to have a display value of flex rather than block to keep their layout correct
