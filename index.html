@@ -72,18 +72,13 @@
                 </p>
             </section>
             <div class="carousel">
-                <div class="slides fade" id="slide-1">
-                    
-                </div>
-                <div class="slides fade" id="slide-2">
-                  
-                </div>
-                <div class="slides fade" id="slide-3">
-                </div>
+                <div class="slides fade" id="slide-1"></div>
+                <div class="slides fade" id="slide-2"></div>
+                <div class="slides fade" id="slide-3"></div>
                 <div id="carousel-buttons">
                     <!-- Carousel Buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="prev" id="previousArrow">&#10094;</a>
+                    <a class="next" id="nextArrow">&#10095;</a>
                 </div>
                 
                 
@@ -115,33 +110,41 @@
             </footer>
     </div>
     <script src="https://kit.fontawesome.com/913e9b68dc.js" crossorigin="anonymous"></script>
-        <script>
+    <script>
+        // Set slide index to 1 for the first slide
         let slideIndex = 1;
-        showSlides(slideIndex);
 
-        // Next/previous controls
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
+        // Attach directional arrows in the DOM to variables
+        const previousArrow = document.querySelector('#previousArrow');
+        const nextArrow = document.querySelector('#nextArrow');
 
-        // Thumbnail image controls
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
+        // Add event listeners for when each of the directional arrows are clicked
+        previousArrow.addEventListener('click', () => plusSides(-1));
+        nextArrow.addEventListener('click', () => plusSides(1));
 
-        function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("slides");
-        
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+        // Arrow functions for moving the slides forwards and backwards
+        const plusSides = n => showSlides(slideIndex += n);
+
+        // Arrow function that is called from the above event listeners: moves the slides in either direction
+        const showSlides = n => {
+            let i;
+            const slides = document.getElementsByClassName("slides");
+
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            // Set the slides divs to have a display value of flex rather than block to keep their layout correct
+            slides[slideIndex - 1].style.display = "flex";
         }
-        
-        slides[slideIndex-1].style.display = "flex";
-        
-        }
+        // Execute the showSlides arrow function to show carousel slides in the DOM
+        showSlides();
     </script>
         
 </body>
