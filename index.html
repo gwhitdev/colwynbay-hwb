@@ -158,7 +158,6 @@
         const previousArrow = document.querySelector('#previousArrow');
         const nextArrow = document.querySelector('#nextArrow');
 
-
         // Add event listeners for when each of the directional arrows are clicked
         previousArrow.addEventListener('click', () => plusSides(-1));
         nextArrow.addEventListener('click', () => plusSides(1));
@@ -176,7 +175,6 @@
 
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
-                slides[i].classList.remove('fade');
                 slides[i].classList.add('fade');
             };
             
