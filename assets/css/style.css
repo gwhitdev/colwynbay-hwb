@@ -78,11 +78,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 header a {
     text-decoration: none;
 }
-
 header i {
     color: var(--cus-purple);
 }
@@ -100,12 +98,10 @@ nav {
     background-color: white;
     top: 100%;
 }
-
 #menu {
     list-style-type: none;
     font-size: 1.5em;
 }
-
 #menu > li {
     padding-left: 1rem;
     margin-bottom: 1em;
@@ -113,17 +109,21 @@ nav {
 
 
 /* Nav toggle */
+
 #nav-toggle:checked~nav {
     display: block;
 }
-
 #nav-toggle {
     display: none;
 }
-
 .nav-toggle-label {
-    font-size: 2rem;
-    
+    padding-right: 5px;
+}
+.icon {
+    width: 1.5rem;
+}
+.icon path {
+    fill: var(--cus-purple);
 }
 
 
