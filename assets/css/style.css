@@ -131,7 +131,7 @@ nav {
 .hero {
     width: 100vw;
     height: 40vh;
-    background: url('../images/Sunset_over_Colwyn_Bay.jpg') no-repeat center center / cover;
+    background: url('../images/Sunset_over_Colwyn_Bay.webp') no-repeat center center / cover;
     position: relative;
    
 }
@@ -189,6 +189,7 @@ nav {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    background-color: rgba(var(--cus-purple-rgb),1);
 }
 
 .slides {
@@ -196,7 +197,7 @@ nav {
     justify-content: center;
     width: 100vw;
     height: 200px;
-
+   
 }
 
 .next, .prev {
@@ -221,8 +222,16 @@ nav {
 }
 
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
