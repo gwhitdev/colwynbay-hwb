@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel='preload' crossorigin as="script" href="https://kit.fontawesome.com/913e9b68dc.js">
     <!-- Preload fonts and GoogleFonts stylesheet to reduce overload load time of page -->
+    <link rel="preload" fetchpriority="high" as="image" href="assets/images/Sunset_over_Colwyn_Bay.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link 
@@ -34,15 +34,16 @@
         href="https://fonts.gstatic.com/s/fredoka/v14/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OryL8H-mKpNk.woff2"
     />
     
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap"/>
+    <link rel="preload" fetchpriority="high" as="style" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap">
+    
+    <link rel="stylesheet" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap"/>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colwyn Bay Community Hwb and Foodbank</title>
     
     
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" fetchpriority="high" href="assets/css/style.css">
 </head>
 <body>
    
@@ -150,7 +151,6 @@
                 <!-- FOOTER -->
             </footer>
     </div>
-    <script  rel='preload'src="https://kit.fontawesome.com/913e9b68dc.js" crossorigin="anonymous"></script>
     <script>
         // Set slide index to 1 for the first slide
         let slideIndex = 1;

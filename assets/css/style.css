@@ -1,6 +1,3 @@
-/*Google Fonts import*/
-/*@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&family=Londrina+Solid:wght@100;300;400;900&family=Londrina+Shadow&display=swap');*/
-
 /* Variables */
 :root {
     --cus-blue:     #0CB2AF /*Blue*/;
@@ -8,15 +5,14 @@
     --cus-yellow: #FAC723 /*Yellow*/;
     --cus-orange: #F29222 /*Orange*/;
     --cus-red: #E95E50 /*Red*/;
-    --cus-purple: #936FAC /*Purple*/;
+    --cus-purple: #77528E;
     --solid-primary-font: "Londrina Solid", sans-serif;
     --primary-font: "Londrina Shadow", sans-serif;
     --secondary-font: "Fredoka", sans-serif;
-    --cus-purple-rgb: 147, 111, 172;
+    --cus-purple-rgb: 119, 82, 142;
     --cus-orange-rgb: 242, 146, 34;
     
 }
-
 /* Globals */
 h1,
 h2,
@@ -24,25 +20,16 @@ h3,
 h4 {
     font-family: var(--solid-primary-font);
 }
-
 h2 {
     font-size: 2.75rem;
 }
-
 .mainheading {
     font-family: var(--primary-font);
 }
-
 .subheading {
     font-family: var(--secondary-font);
     font-size: 2rem;
 }
-
-.hidden {
-    display: none;
-}
-
-
 * {
     padding: 0;
     margin: 0;
