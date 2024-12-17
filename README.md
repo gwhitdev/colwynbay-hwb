@@ -44,13 +44,27 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
 
 ## **Planning stage**
 ### **Target Audiences:**
-
+- People who want to discover general information about the Hwb.
+- People who want to find out how to donate to the organisation.
+- People who want to make use of the Hwb's foodbank.
+- People who need to hire a room.
+- People who want to find out what events are coming up or which groups are in regular attendance at the Hwb.
 
 ### **User Stories:**
-
-
+- As a general user of the Hwb's website, I want the website to be well designed and easy to navigate, so that I can find the information that I want quickly.
+- As someone who hasn't visited the Hwb before, I want to feel that I know more about the Hwb after leaving the website than I did before visiting, so that I can visit the Hwb in person and know when it is open.
+- As someone who needs to use the foodbank, I need to know where it is and its opening times, so that I can access it.
+- As an event organiser, I want to know basic information about room hire, so that I can make a decision about making a booking.
+- As a general user of the Hwb's website, I want to be able to easily contact the Hwb from the website, so that I can enquire about the Hwb's variety of services.
+- As an event attendee, I want to learn about upcoming events, so that I can decide if I want to attend.
+- As a potential donor, I want to be able to learn how the Hwb accepts donations, so that I can decide how to donate.
+  
 ### **Site Aims:**
-
+- To inform people about the Hwb's aims and purpose.
+- To inform people about the Hwb's services and how they can visit.
+- To provide details about donating.
+- To provide a method of communication with the Hwb.
+- To provide event and group organisers with a means of publicising their events and groups.
 
 ### **How this will be achieved:**
 
