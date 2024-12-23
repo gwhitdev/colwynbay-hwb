@@ -79,6 +79,7 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
 
 
 * Desktop wireframes:
+    * [Home Page](docs/wireframes/desktop-landing-page.png)
 
 
 
