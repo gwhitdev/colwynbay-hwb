@@ -11,7 +11,7 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
     * [***Site Aims***](#site-aims)
     * [***How Is This Will Be Achieved:***](#how-is-this-will-be-achieved)
     * [***Wireframes***](#wireframes)
-    * [***Color Scheme***](#color-scheme)
+    * [***Colour Scheme***](#Colour-scheme)
 1. [**Current Features Common to all pages**](#current-features-common-to-all-pages)
     * [***Header Element:***](#header-element)
         * [*Title*](#title)
@@ -90,12 +90,12 @@ To help provide design consistency and to ensure a more streamlined approach to 
     * [Events and Group Details Page](docs/wireframes/desktop-events-groups-details-page.png)
 
 
-### **Color Scheme:**
+### **Colour Scheme:**
 I chose hues of purple and orange based on some of the colours found within the Hwb's logo. Black and white text complement these colours. When using Google Dev Tools' Lighthouse feature I discovered that the text/background colour contrast was too low with the chosen purple hue so I used a [suggested tool](https://dequeuniversity.com/rules/axe/4.10/color-contrast) to adjust the contrast ratio. This means that the purple deviates from the original selection (#936FAC). The value found in the CSS styles is now #77528E.
 
 
 
-![Color contrast grid](docs/screenshots/contrast-grid.png "Colour contrast grid") 
+![Colour contrast grid](docs/screenshots/contrast-grid.png "Colour contrast grid") 
 
 ## **Current Features Common to all pages**
 ###  **Header Element**
@@ -172,7 +172,7 @@ The fonts used throughout each page are:
 
 * Screenshot under README.md section titled "site overview" was created view [Am I responsive](https://ui.dev/amiresponsive?url=https://gwhitdev.github.io/colwynbay-hwb/)
 
-* Color grid contract tool - [Eightshapes](https://contrast-grid.eightshapes.com/) 
+* Colour grid contract tool - [Eightshapes](https://contrast-grid.eightshapes.com/) 
 
 * Calculator used to resize figure images -[Aspect Ratio Calculator](https://andrew.hedges.name/experiments/aspect_ratio/)
 
