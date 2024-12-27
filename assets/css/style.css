@@ -345,11 +345,48 @@ footer {
         font-size: 4rem;
         margin: 0 0.5rem;
     }
-
-    #cover-text {
-        bottom: 40%;
-        font-size: 4.5rem;
+    #cover-title {
+        line-height: 70px;
+        padding-top: 25px;
+        font-size: 5rem;
     }
+    /* Welcome Message */
+    .welcome-message p {
+    font-size: 1.75rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    }
+
+    .welcome-message p:first-child {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 600;
+        font-size: 2.75rem;
+    }
+
+    /* Details */
+    .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 50px
+    }
+
+    /* Opening Times */
+    #opening-times > h2, #visit-us > h2 {
+        font-size: 3.5rem;
+    }
+
+    /* Carousel */
+    .carousel {
+        top: 85vh;
+    }
+    .slides {
+        height: 300px;
+    }
+
 }
 
 @media screen and (min-width: 922px) {
