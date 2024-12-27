@@ -59,7 +59,7 @@ header {
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
-    width: 100vw;
+    width: 100%;
     min-height: 74px;
     display: flex;
     justify-content: space-between;
@@ -116,7 +116,7 @@ nav {
 
 /* Hero */
 .hero {
-    width: 100vw;
+    width: 100%;
     height: 40vh;
     background: url('../images/Sunset_over_Colwyn_Bay.webp') no-repeat center center / cover;
     position: relative;
@@ -147,7 +147,7 @@ nav {
 /* Welcome Message */
 .welcome-message {
     /*height: 40vh;*/
-    width: 100vw;
+    width: 100%;
     background-color: var(--cus-purple);
     margin-top: 10px;
     /*padding-bottom: 50px;*/
@@ -177,12 +177,13 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: rgba(var(--cus-purple-rgb),1);
+    left: 5%;
 }
 
 .slides {
     display: none;
     justify-content: center;
-    width: 100vw;
+    width: 90vw;
     height: 200px;
    
 }
