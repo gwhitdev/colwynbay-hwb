@@ -67,12 +67,14 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
 - To provide event and group organisers with a means of publicising their events and groups.
 
 ### **How this will be achieved:**
-
-
-
+- The home page provides users with a brief introduction to the Hwb, the opening times and the location.
+- The home page contains the latest news section and information on how to use the foodbank and donate, as well as the contact form.
+- There is a sticky navigation bar that provides access to the remaining pages.
+- A link to the Hwb's social media account is in the footer.
+- There is a page that provides basic details about upcoming events and regular group bookings. There is a section in this page that provides information regarding room hire and a link to the contact page to enquire.
 
 ### **Wireframes:**
-
+To help provide design consistency and to ensure a more streamlined approach to development, I've created two sets of wireframes: one for desktop and another for mobile. Links to each of the wireframes can be found below.
 
 * Mobile Wireframes:
     * [Home Page](docs/wireframes/landing-mobile-wireframe.png)
@@ -88,17 +90,17 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
     * [Events and Group Details Page](docs/wireframes/desktop-events-groups-details-page.png)
 
 
-
 ### **Color Scheme:**
-I have removed the colour groups that do not pass at least the grade of AA18 from the grid below.
+I chose hues of purple and orange based on some of the colours found within the Hwb's logo. Black and white text complement these colours. When using Google Dev Tools' Lighthouse feature I discovered that the text/background colour contrast was too low with the chosen purple hue so I used a [suggested tool](https://dequeuniversity.com/rules/axe/4.10/color-contrast) to adjust the contrast ratio. This means that the purple deviates from the original selection (#936FAC). The value found in the CSS styles is now #77528E.
 
-![Color contrast grid](docs/screenshots/contrast-grid.png)
+
+
+![Color contrast grid](docs/screenshots/contrast-grid.png "Colour contrast grid") 
 
 ## **Current Features Common to all pages**
 ###  **Header Element**
 
 #### *Title:*
-![Page title](docs/screenshots/title.jpg)
 
 
 #### *Navigation Bar:*
@@ -122,6 +124,9 @@ I have removed the colour groups that do not pass at least the grade of AA18 fro
 
 
 ## **Typography**
+The fonts used throughout each page are:
+- Londrina Solid: for all main headings and logotype
+- Fredoka: for all other text including links and navbar text
 
 ## **Individual Page Content features**
 ### **About Page Content:**
