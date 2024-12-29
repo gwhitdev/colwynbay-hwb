@@ -292,6 +292,27 @@ nav {
     height: 25vh;
 }
 
+/* Latest News */
+.card {
+    text-align: center;
+    border-bottom: 2px dashed black;
+    padding-bottom: 15px;
+}
+.card:last-of-type {
+    border-bottom: 0px;
+}
+.news-image {
+    display: flex;
+    justify-content: center;
+}
+.news-title {
+    margin-top: 5px;
+}
+
+.news-image img {
+    width: 200px;
+}
+
 
 /* Footer */
 footer {
