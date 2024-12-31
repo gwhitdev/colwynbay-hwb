@@ -166,12 +166,15 @@ nav {
     font-weight: 600;
 }
 
-
+/* Details */
+.details {
+    padding-bottom: 25px;
+}
 /* Carousel */
 .carousel {
     z-index:97;
     position: absolute;
-    top: 100vh;
+    top: 885px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -240,6 +243,7 @@ nav {
     background-color: var(--cus-orange);
     text-align: left;
     position: relative;
+    padding-top: 25px;
 }
 
 .latest-news h2 {
@@ -359,6 +363,9 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    section {
+        padding-top: 0;
+    }
     nav {
         display: flex;
         position: relative;
@@ -381,24 +388,27 @@ footer {
         font-size: 4rem;
         margin: 0 0.5rem;
     }
+    .hero {
+        height: 50vh;
+    }
     #cover-title {
         line-height: 70px;
         padding-top: 25px;
         font-size: 5rem;
+        min-height: 35vh;
     }
     /* Welcome Message */
-    .welcome-message p {
-    font-size: 1.75rem;
-    padding-left: 20px;
-    padding-right: 20px;
     
+    .welcome-message p {
+        font-size: 1.75rem;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-
     .welcome-message p:first-child {
         padding-left: 20px;
         padding-right: 20px;
         font-weight: 600;
-        font-size: 2.75rem;
+        font-size: 2.5rem;
     }
 
     /* Details */
@@ -407,21 +417,54 @@ footer {
         flex-direction: row;
         justify-content: center;
         gap: 100px;
-        margin-top: 50px
+        padding-top: 35px;
+        height: 500px;
     }
 
     /* Opening Times */
+    #opening-times {
+        margin-top: 0;
+        padding-top: 0;
+    }
     #opening-times > h2, #visit-us > h2 {
         font-size: 3.5rem;
     }
-
+    #visit-us {
+        margin-top: 0;
+    }
+   
     /* Carousel */
     .carousel {
-        top: 85vh;
+        top: 1090px;
     }
     .slides {
-        height: 300px;
+        height: 450px;
     }
+
+    /* Latest News */
+    .latest-news h2 {
+        margin-top: 250px;
+    }
+    #news-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 25px;
+    }
+    .card {
+        width: 50%;
+        border: none;
+    }
+    .card img {
+        width: 100%;
+    }
+    
+
+    #foodbank {
+        padding-top: 25px;
+    }
+   
 
 }
 
