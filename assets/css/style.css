@@ -23,12 +23,8 @@ h4 {
 h2 {
     font-size: 2.75rem;
 }
-.mainheading {
-    font-family: var(--primary-font);
-}
-.subheading {
+h3, h4 {
     font-family: var(--secondary-font);
-    font-size: 2rem;
 }
 * {
     padding: 0;
@@ -41,6 +37,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--cus-purple);
+}
+section {
+    padding-top: 15px;
 }
 
 /* Flex Container */
@@ -308,11 +307,27 @@ nav {
 .news-title {
     margin-top: 5px;
 }
-
 .news-image img {
     width: 200px;
 }
 
+/* Foodbank */
+#foodbank {
+    background-color: var(--cus-purple-rgb);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#foodbank-details {
+    padding: 15px;
+}
+#foodbank h3 {
+    padding-top: 15px;
+}
 
 /* Footer */
 footer {
