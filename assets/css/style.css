@@ -237,37 +237,7 @@ nav {
 }
 
 /* Latest News */
-.latest-news {
-    min-height: 100vh;
-    width: 100%;
-    background-color: var(--cus-orange);
-    text-align: left;
-    position: relative;
-    padding-top: 25px;
-}
 
-.latest-news h2 {
-    color: black;
-    font-size: 2.75rem;
-    margin-top: 150px;
-    text-align: center;
-}
-
-.card {
-    margin-top: 10px;
-    margin-bottom: 25px;
-    padding: 0 20px;
-}
-.news-date {
-    font-weight: bold;
-}
-.news-title {
-    font-weight: bold;
-}
-.news-snippet {
-    
-    margin-top: 15px;
-}
 
 
 /* Opening Times */
@@ -296,10 +266,22 @@ nav {
 }
 
 /* Latest News */
+.latest-news {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--cus-orange);
+    text-align: left;
+    position: relative;
+    padding-top: 25px;
+}
 .card {
     text-align: center;
     border-bottom: 2px dashed black;
     padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 .card:last-of-type {
     border-bottom: 0px;
@@ -308,12 +290,26 @@ nav {
     display: flex;
     justify-content: center;
 }
-.news-title {
-    margin-top: 5px;
-}
 .news-image img {
     width: 200px;
 }
+.news-title {
+    margin-top: 5px;
+    font-weight: bold;
+}
+.latest-news h2 {
+    color: black;
+    font-size: 2.75rem;
+    margin-top: 150px;
+    text-align: center;
+}
+.news-date {
+    font-weight: bold;
+}
+.news-snippet {
+    margin-top: 15px;
+}
+
 
 /* Foodbank */
 #foodbank {
