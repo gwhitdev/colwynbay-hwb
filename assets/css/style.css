@@ -469,6 +469,9 @@ footer {
     #foodbank {
         padding-top: 1.5rem;
     }
+    #contact-form-section {
+        padding-top: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 922px) {
