@@ -88,7 +88,6 @@ nav {
     margin-bottom: 1rem;
 }
 
-
 /* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
@@ -106,7 +105,6 @@ nav {
     fill: var(--cus-purple);
 }
 
-
 /* Hero */
 .hero {
     width: 100%;
@@ -115,7 +113,6 @@ nav {
     position: relative;
    
 }
-
 #cover-text {
     background-color: rgba(var(--cus-purple-rgb),0.6);
     position: absolute;
@@ -124,9 +121,7 @@ nav {
     min-height: 20vh;
     padding-left: 10px;
     padding-right: 1.5rem;
-    
 }
-
 #cover-title {
     font-size: 2.75rem;
     color: white;
@@ -136,7 +131,6 @@ nav {
     font-weight: 400;
 }
 
-
 /* Welcome Message */
 .welcome-message {
     width: 100%;
@@ -144,7 +138,6 @@ nav {
     margin-top: 10px;
     position: relative;
 }
-
 .welcome-message p {
    color: white;
    text-align: center;
@@ -162,11 +155,35 @@ nav {
     padding-bottom: 1.5rem;
 }
 
+/* Opening Times */
+#opening-times {
+    background-color: var(--cus-purple);
+    min-height: 10vh;
+    color: white;
+    text-align: center;
+    padding-top: 1.5rem;
+    position: relative;
+}
+#opening-times > h2 {
+    font-weight: bold;
+}
+#times {
+    margin-top: 10px;
+}
+#visit-us {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    height: 25vh;
+}
+
 /* Carousel */
 .carousel {
     z-index: 97;
     position: absolute;
-    top: 885px;
+    top: 904px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -220,33 +237,8 @@ nav {
     background: url('../images/469111474_122269146176002860_1941981137026856415_n.jpg') no-repeat center center / cover;    
 }
 
-/* Opening Times */
-#opening-times {
-    background-color: var(--cus-purple);
-    min-height: 10vh;
-    color: white;
-    text-align: center;
-    padding-top: 1.5rem;
-    position: relative;
-}
-#opening-times > h2 {
-    font-weight: bold;
-}
-#times {
-    margin-top: 10px;
-}
-#visit-us {
-    position: relative;
-    color: white;
-    text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    height: 25vh;
-}
-
 /* Latest News */
 .latest-news {
-    min-height: 100vh;
     width: 100%;
     background-color: var(--cus-orange);
     text-align: left;
@@ -279,7 +271,7 @@ nav {
 .latest-news h2 {
     color: black;
     font-size: 2.75rem;
-    margin-top: 9rem;
+    margin-top: 8rem;
     text-align: center;
 }
 .news-date {
@@ -300,6 +292,9 @@ nav {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+#foodbank h2 {
+    margin-top: 2rem;
+}
 #foodbank-details {
     padding: 1rem;
 }
@@ -313,6 +308,9 @@ nav {
     color: black;
     text-align: center;
     margin-top: 1.5rem;
+}
+#contact-form-section h2 {
+    margin-top: 2rem;
 }
 #contact-form {
     display: flex;
