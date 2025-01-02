@@ -95,7 +95,7 @@ I chose hues of purple and orange based on some of the colours found within the 
 
 
 
-![Colour contrast grid](docs/screenshots/contrast-grid.png "Colour contrast grid") 
+![Colour contrast grid](docs/screenshots/contrast-grid-v2.png "Colour contrast grid") 
 
 ## **Current Features Common to all pages**
 ###  **Header Element**
