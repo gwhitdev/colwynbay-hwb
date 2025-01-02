@@ -2,8 +2,8 @@
  let slideIndex = 1;
 
  // Attach directional arrows in the DOM to variables
- const previousArrow = document.querySelector('#previousArrow');
- const nextArrow = document.querySelector('#nextArrow');
+ const previousArrow = document.getElementById('previousArrow');
+ const nextArrow = document.getElementById('nextArrow');
 
  // Add event listeners for when each of the directional arrows are clicked
  previousArrow.addEventListener('click', () => plusSides(-1));
