@@ -86,11 +86,11 @@ nav {
 }
 #menu {
     list-style-type: none;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 #menu > li {
     padding-left: 1rem;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 
@@ -337,14 +337,20 @@ nav {
     margin-top: 25px;
 }
 #contact-form {
-    text-align: center;
     display: flex;
     flex-direction: column;
     font-size: 1.75rem;
 }
-#contact-form input {
+#contact-form p {
+    margin-top: 10px;
+}
+#contact-form label {
+    text-align: left;
+}
+#contact-form input{
     width: 90%;
-    height: 30px;
+    height: 35px;
+    text-align: center;
 }
 #contact-form button {
     width: 150px;
@@ -355,6 +361,10 @@ nav {
     width: 90%;
     height: 75px;
 }
+#contact-form textarea {
+    width: 90%;
+}
+
 /* Footer */
 footer {
     width: 100%;
