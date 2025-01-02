@@ -41,211 +41,210 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap"/>
     <link rel="stylesheet" fetchpriority="high" href="assets/css/style.css">
-    
     <!-- Title -->
     <title>Colwyn Bay Community Hwb and Foodbank</title>
 </head>
 <body>
-   
-        <header>
-            <a href="index.html">
-                <h1 id="logo">
-                    HWB
+    <!-- Header including navigation and logotype -->
+    <header>
+        <a href="index.html">
+            <h1 id="logo">
+                HWB
+            </h1>
+        </a>
+        <!-- Navigation toggle -->
+        <input type="checkbox" name="nav-toggle" id="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                class="icon" 
+                viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+            </svg>
+        </label>
+        <!-- Navigation -->
+        <nav>
+            <ul id="menu">
+                <li>Latest News</li>
+                <li>Donations</li>
+                <li>Regular Groups</li>
+                <li>Regular Events</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Hero image -->
+        <div class="hero">
+            <div id="cover-text">
+                <h1 id="cover-title">
+                    Colwyn Bay Community<br>
+                    Hwb and Foodbank
                 </h1>
-            </a>
-
-            <input type="checkbox" name="nav-toggle" id="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label">
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                    class="icon" 
-                    viewBox="0 0 448 512">
-                    <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
-                </svg>
-            </label>
-             <nav>
-                <ul id="menu">
-                    <li>Latest News</li>
-                    <li>Donations</li>
-                    <li>Regular Groups</li>
-                    <li>Regular Events</li>
-                </ul>
-            </nav>
-        </header>
-        <div class="container">
-            <div class="hero">
-                <div id="cover-text">
-                    <h1 id="cover-title">
-                        Colwyn Bay Community<br>
-                        Hwb and Foodbank
-                    </h1>
-                </div>
-                
             </div>
-            
-            <section class="welcome-message" id="welcome-message">
-                
-                <p>
-                    <strong>The Colwyn Bay Community Hwb and Foodbank exists for the people of Colwyn Bay and surrounding areas.</strong>
+        </div>
+        <!-- Welcome message section -->
+        <section class="welcome-message" id="welcome-message">
+            <p>
+                <strong>The Colwyn Bay Community Hwb and Foodbank exists for the people of Colwyn Bay and surrounding areas.</strong>
+            </p>
+            <p>
+                We provide a safe, warm space to enjoy meeting other people, to take part in group activities, for room hire,
+                a youth club and gaming plus so much more!
+            </p>
+        </section>
+        <!-- Details section including opening times and location -->
+        <section class="details">
+            <div id="opening-times">
+                <h2>
+                    Opening Times
+                </h2>
+                <p id="times">
+                    Monday to Friday 8AM to 8PM<br>
+                    Saturday and Sunday 10AM to 4PM
                 </p>
-                <p>
-                    We provide a safe, warm space to enjoy meeting other people, to take part in group activities, for room hire,
-                    a youth club and gaming plus so much more!
+            </div>
+            <div id="visit-us">
+                <h2>
+                    Visit Us
+                </h2>
+                <p id="address">
+                    The Old Church Hall,<br>
+                    Rhiw Road,<br>
+                    Colwyn Bay
                 </p>
-                
-            </section>
-            <div class="details">
-                <section id="opening-times">
-                    <h2>
-                        Opening Times
-                    </h2>
-                    <p id="times">
-                        Monday to Friday 8AM to 8PM<br>
-                        Saturday and Sunday 10AM to 4PM
-                    </p>
-                </section>
-                <section id="visit-us">
-                    <h2>
-                        Visit Us
-                    </h2>
-                    <p id="address">
-                        The Old Church Hall,<br>
-                        Rhiw Road,<br>
-                        Colwyn Bay
-                    </p>
-                </section>
             </div>
-           
-            <div class="carousel">
-                <div class="slides fade" id="slide-1"></div>
-                <div class="slides fade" id="slide-2"></div>
-                <div class="slides fade" id="slide-3"></div>
-                <div id="carousel-buttons">
-                    <!-- Carousel Buttons -->
-                    <a class="prev" id="previousArrow">&#10094;</a>
-                    <a class="next" id="nextArrow">&#10095;</a>
+        </section>
+        <!-- Image carousel -->
+        <div class="carousel">
+            <!-- Carousel slides -->
+            <div class="slides fade" id="slide-1"></div>
+            <div class="slides fade" id="slide-2"></div>
+            <div class="slides fade" id="slide-3"></div>
+            <div id="carousel-buttons">
+                <!-- Carousel Buttons -->
+                <a class="prev" id="previousArrow">&#10094;</a>
+                <a class="next" id="nextArrow">&#10095;</a>
+            </div>
+        </div>
+        <!-- Latest news section -->
+        <section class="latest-news">
+            <h2>Latest News</h2>
+            <!-- Latest news cards -->
+            <div id="news-cards">
+                <div class="card">
+                    <div class="news-image">
+                        <img src="https://placehold.co/400x200" alt="Placeholder image">
+                    </div>
+                    <div class="news-title">News Title </div>
+                    <div class="news-date">01/01/2025</div>
+                    <div class="news-snippet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia sunt nam animi, ut explicabo, nisi temporibus ratione labore esse velit dignissimos est nostrum, totam fugit. Repellat quasi at nobis?</div>
+                </div>
+                <div class="card">
+                    <div class="news-image">
+                        <img src="https://placehold.co/400x200" alt="Placeholder image">
+                    </div>
+                    <div class="news-title">News Title</div>
+                    <div class="news-date">News Date 2024</div>
+                    <div class="news-snippet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia sunt nam animi, ut explicabo, nisi temporibus ratione labore esse velit dignissimos est nostrum, totam fugit. Repellat quasi at nobis?</div>
+                </div>
+                <div class="card">
+                    <div class="news-image">
+                        <img src="https://placehold.co/400x200" alt="Placeholder image">
+                    </div>
+                    <div class="news-title">News Title</div>
+                    <div class="news-date">News Date 2024</div>
+                    <div class="news-snippet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia sunt nam animi, ut explicabo, nisi temporibus ratione labore esse velit dignissimos est nostrum, totam fugit. Repellat quasi at nobis?</div>
+                </div>
+                <div class="card">
+                    <div class="news-image">
+                        <img src="https://placehold.co/400x200" alt="Placeholder image">
+                    </div>
+                    <div class="news-title">News Title</div>
+                    <div class="news-date">News Date 2024</div>
+                    <div class="news-snippet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia sunt nam animi, ut explicabo, nisi temporibus ratione labore esse velit dignissimos est nostrum, totam fugit. Repellat quasi at nobis?</div>
+                </div>
+                <div class="card">
+                    <div class="news-image">
+                        <img src="https://placehold.co/400x200" alt="Placeholder image">
+                    </div>
+                    <div class="news-title">News Title</div>
+                    <div class="news-date">News Date 2024</div>
+                    <div class="news-snippet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia sunt nam animi, ut explicabo, nisi temporibus ratione labore esse velit dignissimos est nostrum, totam fugit. Repellat quasi at nobis?</div>
+                </div>
+                <div class="card">
+                    <div class="news-image">
+                        <img src="https://placehold.co/400x200" alt="Placeholder image">
+                    </div>
+                    <div class="news-title">News Title</div>
+                    <div class="news-date">News Date 2024</div>
+                    <div class="news-snippet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia sunt nam animi, ut explicabo, nisi temporibus ratione labore esse velit dignissimos est nostrum, totam fugit. Repellat quasi at nobis?</div>
                 </div>
             </div>
-            <section class="latest-news">
-                <h2>Latest News</h2>
-                <div id="news-cards">
-                    <div class="card">
-                        <div class="news-image">
-                            <img src="https://placehold.co/400x200" alt="Placeholder image">
-                        </div>
-                        <div class="news-title">News Title </div>
-                        <div class="news-date">01/01/2025</div>
-                        <div class="news-snippet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia sunt nam animi, ut explicabo, nisi temporibus ratione labore esse velit dignissimos est nostrum, totam fugit. Repellat quasi at nobis?</div>
-                    </div>
-                    <div class="card">
-                        <div class="news-image">
-                            <img src="https://placehold.co/400x200" alt="Placeholder image">
-                        </div>
-                        <div class="news-title">News Title</div>
-                        <div class="news-date">News Date 2024</div>
-                        <div class="news-snippet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia sunt nam animi, ut explicabo, nisi temporibus ratione labore esse velit dignissimos est nostrum, totam fugit. Repellat quasi at nobis?</div>
-                    </div>
-                    <div class="card">
-                        <div class="news-image">
-                            <img src="https://placehold.co/400x200" alt="Placeholder image">
-                        </div>
-                        <div class="news-title">News Title</div>
-                        <div class="news-date">News Date 2024</div>
-                        <div class="news-snippet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia sunt nam animi, ut explicabo, nisi temporibus ratione labore esse velit dignissimos est nostrum, totam fugit. Repellat quasi at nobis?</div>
-                    </div>
-                    <div class="card">
-                        <div class="news-image">
-                            <img src="https://placehold.co/400x200" alt="Placeholder image">
-                        </div>
-                        <div class="news-title">News Title</div>
-                        <div class="news-date">News Date 2024</div>
-                        <div class="news-snippet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia sunt nam animi, ut explicabo, nisi temporibus ratione labore esse velit dignissimos est nostrum, totam fugit. Repellat quasi at nobis?</div>
-                    </div>
-                    <div class="card">
-                        <div class="news-image">
-                            <img src="https://placehold.co/400x200" alt="Placeholder image">
-                        </div>
-                        <div class="news-title">News Title</div>
-                        <div class="news-date">News Date 2024</div>
-                        <div class="news-snippet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia sunt nam animi, ut explicabo, nisi temporibus ratione labore esse velit dignissimos est nostrum, totam fugit. Repellat quasi at nobis?</div>
-                    </div>
-                    <div class="card">
-                        <div class="news-image">
-                            <img src="https://placehold.co/400x200" alt="Placeholder image">
-                        </div>
-                        <div class="news-title">News Title</div>
-                        <div class="news-date">News Date 2024</div>
-                        <div class="news-snippet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia sunt nam animi, ut explicabo, nisi temporibus ratione labore esse velit dignissimos est nostrum, totam fugit. Repellat quasi at nobis?</div>
-                    </div>
-                </div>
-            </section>
-            <!-- FOODBANK INFORMATION SECTION -->
-            <section id="foodbank">
-                <div>
-                    <h2>Our Foodbank</h2>
-                </div>
-                <div id="foodbank-details">
-                    <h3>How to access</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat explicabo ipsum, dolorum possimus corporis tempore ipsam velit esse vero iusto! Saepe aspernatur fugiat illum quam tempora unde itaque incidunt perferendis!</p>
-                    <h3>Questions?</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A numquam modi blanditiis voluptatum placeat aspernatur recusandae voluptates officiis harum sapiente aliquid cumque dolorum ex ratione iure necessitatibus velit, alias provident.</p>
-                </div>
-            </section>
-            <section id="contact-form-section">
-                <h2>Contact us</h2>
-                <div id="contact-form">
-                    <form>
-                        <p>
-                            <label for="name">Your name:</label>
-                            <input type="text" name="name" id="name">
-                        </p>
-                        <p>
-                            <label for="email">Your email address:</label>
-                            <input type="email" name="email" id="email">
-                        </p>
-                        <p>
-                            <label for="phone">Your phone number:</label>
-                            <input type="text" name="phone" id="phone">
-                        </p>
-                        <p>
-                            <label for="reason">Message subject</label><br>
-                            <select>
-                                <option selected value="Donating">Donating</option>
-                                <option value="Room hire">Room hire</option>
-                                <option value="Upcoming events">Upcoming events</option>
-                                <option value="Foodbank">Foodbank</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </p>
-                        <p>
-                            <label for="message">Your message:</label>
-                            <textarea cols="50" rows="25" value="message" id="message"></textarea>
-                        </p>
-                        <p>
-                            <button>Send</button>
-                        </p>
-                        <div></div>
-                        
-                       
-                        
-                    </form>
-                </div>
-            </section>
-            
-            <footer>
-                <!-- FOOTER -->
-                 <div class="social">
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page">
-                        <svg id="facebook-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
-                    </a>
-                 </div>
-                 <div id="imprint">
+        </section>
+        <!-- Foodbank information section -->
+        <section id="foodbank">
+            <div>
+                <h2>Our Foodbank</h2>
+            </div>
+            <div id="foodbank-details">
+                <h3>How to access</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat explicabo ipsum, dolorum possimus corporis tempore ipsam velit esse vero iusto! Saepe aspernatur fugiat illum quam tempora unde itaque incidunt perferendis!</p>
+                <h3>Questions?</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A numquam modi blanditiis voluptatum placeat aspernatur recusandae voluptates officiis harum sapiente aliquid cumque dolorum ex ratione iure necessitatibus velit, alias provident.</p>
+            </div>
+        </section>
+        <!-- Contact form section -->
+        <section id="contact-form-section">
+            <h2>Contact us</h2>
+            <div id="contact-form">
+                <form>
                     <p>
-                       Website designed and <br> hand-made by Gareth Whitley
+                        <label for="name">Your name:</label>
+                        <input type="text" name="name" id="name">
                     </p>
-                 </div>
-            </footer>
-    </div>
+                    <p>
+                        <label for="email">Your email address:</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+                    <p>
+                        <label for="phone">Your phone number:</label>
+                        <input type="text" name="phone" id="phone">
+                    </p>
+                    <p>
+                        <label for="reason">Message subject</label><br>
+                        <select>
+                            <option selected value="Donating">Donating</option>
+                            <option value="Room hire">Room hire</option>
+                            <option value="Upcoming events">Upcoming events</option>
+                            <option value="Foodbank">Foodbank</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="message">Your message:</label>
+                        <textarea cols="50" rows="25" value="message" id="message"></textarea>
+                    </p>
+                    <p>
+                        <button>Send</button>
+                    </p>
+                </form>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+                <div class="social">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page">
+                    <svg id="facebook-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                </a>
+                </div>
+                <div id="imprint">
+                <p>
+                    Website designed and <br> hand-made by Gareth Whitley
+                </p>
+                </div>
+        </footer>
+</div>
     <!-- JavaScript for carousel feature -->
     <script src="assets/js/carousel.js"></script>
 </body>
