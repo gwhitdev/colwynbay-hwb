@@ -14,13 +14,12 @@
 
  // Arrow function to load the slides and to show the first slide at load
  const showSlides = n => {
-     let i;
      const slides = document.getElementsByClassName("slides");
 
      if (n > slides.length) slideIndex = 1;
      if (n < 1) slideIndex = slides.length;
 
-     for (i = 0; i < slides.length; i++) {
+     for (let i = 0; i < slides.length; i++) {
          slides[i].style.display = "none";
      };
      
