@@ -1,17 +1,12 @@
 /* Variables */
 :root {
-    --cus-blue:     #0CB2AF /*Blue*/;
-    --cus-green: #A1C65D /*Green*/;
-    --cus-yellow: #FAC723 /*Yellow*/;
-    --cus-orange: #F29222 /*Orange*/;
-    --cus-red: #E95E50 /*Red*/;
+    --cus-orange: #F29222;
     --cus-purple: #77528E;
+    --cus-purple-rgb: 119, 82, 142;
+    --cus-orange-rgb: 242, 146, 34;
     --solid-primary-font: "Londrina Solid", sans-serif;
     --primary-font: "Londrina Shadow", sans-serif;
     --secondary-font: "Fredoka", sans-serif;
-    --cus-purple-rgb: 119, 82, 142;
-    --cus-orange-rgb: 242, 146, 34;
-    
 }
 /* Globals */
 h1,
