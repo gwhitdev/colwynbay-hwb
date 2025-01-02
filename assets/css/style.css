@@ -34,7 +34,7 @@ body {
     background-color: var(--cus-purple);
 }
 section {
-    padding-top: 15px;
+    padding-top: 1rem;
 }
 
 /* Flex Container */
@@ -54,7 +54,7 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    min-height: 74px;
+    min-height: 4.75rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +90,6 @@ nav {
 
 
 /* Nav toggle */
-
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -120,19 +119,19 @@ nav {
 #cover-text {
     background-color: rgba(var(--cus-purple-rgb),0.6);
     position: absolute;
-    top: 100px;
+    top: 6.25rem;
     width: 75%;
     min-height: 20vh;
     padding-left: 10px;
-    padding-right: 25px;
+    padding-right: 1.5rem;
     
 }
 
 #cover-title {
     font-size: 2.75rem;
     color: white;
-    line-height: 38px;
-    padding-top: 5px;
+    line-height: 2.25rem;
+    padding-top: 1.5rem;
     font-family: var(--solid-primary-font);
     font-weight: 400;
 }
@@ -140,13 +139,10 @@ nav {
 
 /* Welcome Message */
 .welcome-message {
-    /*height: 40vh;*/
     width: 100%;
     background-color: var(--cus-purple);
     margin-top: 10px;
-    /*padding-bottom: 50px;*/
     position: relative;
-    /*top: 50vh;*/
 }
 
 .welcome-message p {
@@ -157,17 +153,18 @@ nav {
 }
 
 .welcome-message p:first-child {
-    padding-top: 20px;
+    padding-top: 1.25rem;
     font-weight: 600;
 }
 
 /* Details */
 .details {
-    padding-bottom: 25px;
+    padding-bottom: 1.5rem;
 }
+
 /* Carousel */
 .carousel {
-    z-index:97;
+    z-index: 97;
     position: absolute;
     top: 885px;
     justify-content: center;
@@ -176,40 +173,33 @@ nav {
     background-color: rgba(var(--cus-purple-rgb),1);
     left: 5%;
 }
-
 .slides {
     display: none;
     justify-content: center;
     width: 90vw;
     height: 200px;
-   
 }
-
 .next, .prev {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 1rem;
     color: white;
     font-weight: bold;
-    font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
     background-color: rgba(201, 66, 178, 0.658);
 }
-
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-
 .fade {
     animation: fadeIn 0.8s ease-in-out;
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -218,7 +208,6 @@ nav {
         opacity: 1;
     }
 }
-
 
 /* Carousel Image Slides */
 #slide-1 {
@@ -231,17 +220,13 @@ nav {
     background: url('../images/469111474_122269146176002860_1941981137026856415_n.jpg') no-repeat center center / cover;    
 }
 
-/* Latest News */
-
-
-
 /* Opening Times */
 #opening-times {
     background-color: var(--cus-purple);
     min-height: 10vh;
     color: white;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 1.5rem;
     position: relative;
 }
 #opening-times > h2 {
@@ -250,13 +235,12 @@ nav {
 #times {
     margin-top: 10px;
 }
-
 #visit-us {
     position: relative;
     color: white;
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     height: 25vh;
 }
 
@@ -267,26 +251,26 @@ nav {
     background-color: var(--cus-orange);
     text-align: left;
     position: relative;
-    padding-top: 25px;
+    padding-top: 1.5rem;
 }
 .card {
     text-align: center;
     border-bottom: 2px dashed black;
-    padding-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
 }
 .card:last-of-type {
-    border-bottom: 0px;
+    border-bottom: 0;
 }
 .news-image {
     display: flex;
     justify-content: center;
 }
 .news-image img {
-    width: 200px;
+    width: 12.5rem;
 }
 .news-title {
     margin-top: 5px;
@@ -295,16 +279,15 @@ nav {
 .latest-news h2 {
     color: black;
     font-size: 2.75rem;
-    margin-top: 150px;
+    margin-top: 9rem;
     text-align: center;
 }
 .news-date {
     font-weight: bold;
 }
 .news-snippet {
-    margin-top: 15px;
+    margin-top: 1rem;
 }
-
 
 /* Foodbank */
 #foodbank {
@@ -314,14 +297,14 @@ nav {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 #foodbank-details {
-    padding: 15px;
+    padding: 1rem;
 }
 #foodbank h3 {
-    padding-top: 15px;
+    padding-top: 1rem;
 }
 
 /* Contact Form */
@@ -329,7 +312,7 @@ nav {
     background-color: var(--cus-orange);
     color: black;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 1.5rem;
 }
 #contact-form {
     display: flex;
@@ -344,17 +327,17 @@ nav {
 }
 #contact-form input{
     width: 90%;
-    height: 35px;
+    height: 2.25rem;
     text-align: center;
 }
 #contact-form button {
-    width: 150px;
-    height: 75px;
-    margin: 25px 0;
+    width: 9rem;
+    height: 4rem;
+    margin: 1.56rem 0;
 }
 #contact-form select {
     width: 90%;
-    height: 75px;
+    height: 4.75rem;
 }
 #contact-form textarea {
     width: 90%;
@@ -363,7 +346,7 @@ nav {
 /* Footer */
 footer {
     width: 100%;
-    height: 75px;
+    height: 8rem;
     background-color: white;
     position: relative;
     display: flex;
@@ -374,7 +357,7 @@ footer {
 #facebook-logo {
     width: 2rem;
     fill: var(--cus-purple);
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 #imprint {
     font-size: 0.5rem;
@@ -384,7 +367,6 @@ footer {
 }
 
 /* MEDIA QUERIES */
-
 @media screen and (min-width: 576px) {
 
 }
@@ -419,8 +401,8 @@ footer {
         height: 50vh;
     }
     #cover-title {
-        line-height: 70px;
-        padding-top: 25px;
+        line-height: 4.37rem;
+        padding-top: 1.5rem;
         font-size: 5rem;
         min-height: 35vh;
     }
@@ -428,12 +410,12 @@ footer {
     /* Welcome Message */
     .welcome-message p {
         font-size: 1.75rem;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
     }
     .welcome-message p:first-child {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
         font-weight: 600;
         font-size: 2.5rem;
     }
@@ -443,8 +425,8 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 100px;
-        padding-top: 35px;
+        gap: 6.25rem;
+        padding-top: 2.25rem;
         height: 500px;
     }
 
@@ -477,7 +459,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-        padding-top: 25px;
+        padding-top: 1.5rem;
     }
     .card {
         width: 50%;
@@ -486,13 +468,9 @@ footer {
     .card img {
         width: 100%;
     }
-    
-
     #foodbank {
-        padding-top: 25px;
+        padding-top: 1.5rem;
     }
-   
-
 }
 
 @media screen and (min-width: 922px) {
@@ -500,7 +478,7 @@ footer {
         bottom: 30%;
         font-size: 5rem;
         width: 45%;
-        padding-left: 50px;
+        padding-left: 3.25;
     }
 }
 
