@@ -77,7 +77,7 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
 To help provide design consistency and to ensure a more streamlined approach to development, I've created two sets of wireframes: one for desktop and another for mobile. Links to each of the wireframes can be found below.
 
 * Mobile Wireframes:
-    * [Home Page](docs/wireframes/landing-mobile-wireframe.png)
+    * [Home Page](docs/wireframes/mobile-landing-page.png)
     * [Error 404 Page](docs/wireframes/mobile-404-page.png)
     * [Contact Thank You Page](docs/wireframes/mobile-contact-thankyou-page.png)
     * [Events and Group Details Page](docs/wireframes/mobile-events-groups-details-page.png)
