@@ -316,8 +316,16 @@ nav {
     display: flex;
     flex-direction: column;
     font-size: 1.75rem;
+    margin-top: 1rem;
 }
-#contact-form p {
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 3px black;
+    outline-offset: 0px;
+    outline: none;
+}
+#contact-form div {
     margin-top: 10px;
 }
 #contact-form label {
@@ -327,21 +335,32 @@ nav {
     width: 90%;
     height: 2.25rem;
     text-align: center;
+    border: 0;
 }
 #contact-form button {
     width: 9rem;
     height: 4rem;
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border: 0;
+}
+button:hover {
+    box-shadow: 0 0 3px black;
+    outline-offset: 0px;
+    outline: none;
+    cursor: pointer;
 }
 #contact-form select {
     width: 90%;
     height: 4.75rem;
     text-align: center;
     font-size: 2rem;
+    border: 0;
 }
 #contact-form textarea {
     width: 90%;
+    border: 0;
 }
 
 /* Footer */
@@ -472,8 +491,33 @@ footer {
     #foodbank {
         padding-top: 1.5rem;
     }
+    
+    /* Contact Form */
     #contact-form-section {
         padding-top: 1.5rem;
+    }
+    #contact-form {
+        flex-direction: row;   
+        justify-content: center;
+        margin-top: 3.5rem;
+    }
+    #contact-form form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+        width: 75%;
+    }
+    #contact-form input {
+        width: 50%;
+        height: 3rem;
+    }
+    #contact-form select {
+        width: 100%;
+    }
+    #contact-form textarea {
+        width: 100%;
     }
 }
 
@@ -484,6 +528,9 @@ footer {
         width: 45%;
         padding-left: 3.25;
     }
+
+   
+   
 }
 
 @media screen and (min-width: 1200px) {

@@ -195,37 +195,28 @@
         <!-- Contact form section -->
         <section id="contact-form-section">
             <h2>Contact us</h2>
+            <span><sup>*</sup> = required</span>
             <div id="contact-form">
+                
                 <form>
-                    <p>
-                        <label for="name">Your name:</label>
-                        <input type="text" name="name" id="name">
-                    </p>
-                    <p>
-                        <label for="email">Your email address:</label>
-                        <input type="email" name="email" id="email">
-                    </p>
-                    <p>
-                        <label for="phone">Your phone number:</label>
+                    
+                        <label for="name"><sup>*</sup>Your name:</label><br>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email"><sup>*</sup>Your email address:</label><br>
+                        <input type="email" name="email" id="email" required>
+                        <label for="phone">Your phone number:</label><br>
                         <input type="text" name="phone" id="phone">
-                    </p>
-                    <p>
-                        <label for="reason">Message subject:</label><br>
-                        <select>
+                        <label for="reason"><sup>*</sup>Message subject:</label><br>
+                        <select required>
                             <option selected value="Donating">Donating</option>
                             <option value="Room hire">Room hire</option>
                             <option value="Upcoming events">Upcoming events</option>
                             <option value="Foodbank">Foodbank</option>
                             <option value="Other">Other</option>
                         </select>
-                    </p>
-                    <p>
-                        <label for="message">Your message:</label>
-                        <textarea cols="50" rows="15" value="message" id="message"></textarea>
-                    </p>
-                    <p>
-                        <button>Send</button>
-                    </p>
+                        <label for="message"><sup>*</sup>Your message:</label>
+                        <textarea cols="50" rows="15" value="message" id="message" required></textarea>
+                        <button type="submit">Send</button>
                 </form>
             </div>
         </section>
