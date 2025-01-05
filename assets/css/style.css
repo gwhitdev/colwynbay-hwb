@@ -132,26 +132,26 @@ nav {
 }
 
 /* Welcome Message */
-.welcome-message {
+#welcome-message {
     width: 100%;
     background-color: var(--cus-purple);
     margin-top: 10px;
     position: relative;
 }
-.welcome-message p {
+#welcome-message p {
    color: white;
    text-align: center;
    font-size: 1rem;
    padding: 10px;
 }
 
-.welcome-message p:first-child {
+#welcome-message p:first-child {
     padding-top: 1.25rem;
     font-weight: 600;
 }
 
 /* Details */
-.details {
+#details {
     padding-bottom: 1.5rem;
 }
 
@@ -388,7 +388,30 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 576px) {
-
+    #cover-title {
+        font-size: 4rem;
+        line-height: 3.25rem;
+    }
+    #welcome-message {
+        margin: 0 auto;
+        width: 90%;
+    }
+    #welcome-message,
+    #details {
+        font-size: 1.2rem;
+    }
+    #welcome-message p:first-child {
+        font-size: 1.5rem;
+    }
+    .carousel {
+        top: 940px;
+    }
+    .slides {
+        height: 20rem;
+    }
+    .latest-news h2 {
+        margin-top: 11rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -428,12 +451,12 @@ footer {
     }
 
     /* Welcome Message */
-    .welcome-message p {
+    #welcome-message p {
         font-size: 1.75rem;
         padding-left: 1.25rem;
         padding-right: 1.25rem;
     }
-    .welcome-message p:first-child {
+    #welcome-message p:first-child {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
         font-weight: 600;
@@ -441,7 +464,7 @@ footer {
     }
 
     /* Details */
-    .details {
+    #details {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -528,11 +551,27 @@ footer {
         width: 45%;
         padding-left: 3.25;
     }
-
-   
+    #welcome-message {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .carousel {
+        top: 1120px;
+    }
    
 }
 
 @media screen and (min-width: 1200px) {
-    
+    #welcome-message-details {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #welcome-message {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .carousel {
+        top: 1040px; 
+    }
 }
