@@ -202,13 +202,19 @@
             <div id="contact-form">
                 
                 <form>
-                    
+                    <div>
                         <label for="name"><sup>*</sup>Your name:</label><br>
                         <input type="text" name="name" id="name" required>
+                    </div>
+                    <div>
                         <label for="email"><sup>*</sup>Your email address:</label><br>
                         <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
                         <label for="phone">Your phone number:</label><br>
                         <input type="text" name="phone" id="phone">
+                    </div>
+                    <div>
                         <label for="reason"><sup>*</sup>Message subject:</label><br>
                         <select required>
                             <option selected value="Donating">Donating</option>
@@ -217,9 +223,14 @@
                             <option value="Foodbank">Foodbank</option>
                             <option value="Other">Other</option>
                         </select>
+                    </div>
+                    <div id="message-div">
                         <label for="message"><sup>*</sup>Your message:</label>
                         <textarea cols="50" rows="15" value="message" id="message" required></textarea>
+                    </div>
+                    <div id="submit-form-button">
                         <button type="submit">Send</button>
+                    </div>
                 </form>
             </div>
         </section>
