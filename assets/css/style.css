@@ -393,14 +393,8 @@ footer {
     #welcome-message p:first-child {
         font-size: 1.5rem;
     }
-    .carousel {
-        top: 940px;
-    }
     .slides {
         height: 20rem;
-    }
-    .latest-news h2 {
-        margin-top: 11rem;
     }
 }
 
@@ -434,9 +428,9 @@ footer {
         height: 50vh;
     }
     #cover-title {
-        line-height: 4.37rem;
+        line-height: 6.37rem;
         padding-top: 1.5rem;
-        font-size: 5rem;
+        font-size: 8rem;
         min-height: 35vh;
     }
 
@@ -460,7 +454,6 @@ footer {
         justify-content: center;
         gap: 6.25rem;
         padding-top: 2.25rem;
-        height: 500px;
     }
 
     /* Opening Times */
@@ -476,17 +469,11 @@ footer {
     }
    
     /* Carousel */
-    .carousel {
-        top: 1090px;
-    }
     .slides {
         height: 450px;
     }
 
     /* Latest News */
-    .latest-news h2 {
-        margin-top: 250px;
-    }
     #news-cards {
         display: flex;
         flex-direction: row;
