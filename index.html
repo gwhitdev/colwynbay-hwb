@@ -217,40 +217,47 @@
         </section>
         <!-- Contact form section -->
         <section id="contact-form-section">
-            <h2>Contact us</h2>
-            <span><sup>*</sup> = required</span>
             <div id="contact-form">
-                
+                <h2>Contact us</h2>
+                <span><sup>*</sup> = required</span>
                 <form>
-                    <div>
-                        <label for="name"><sup>*</sup>Your name:</label><br>
-                        <input type="text" name="name" id="name" required>
+                    <div id="form-column">
+                        <div id="form-left">
+                            <div>
+                                <label for="name"><sup>*</sup>Your name:</label><br>
+                                <input type="text" name="name" id="name" required>
+                                
+                            </div>
+                            <div>
+                                <label for="email"><sup>*</sup>Your email address:</label><br>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div>
+                                <label for="phone"><sup><!-- Empty sup is here to align with the message subject --></sup>Your phone number:</label><br>
+                                <input type="text" name="phone" id="phone">
+                            </div>
+                            <div>
+                                <label for="reason"><sup>*</sup>Message subject:</label>
+                                <select required>
+                                    <option selected value="Donating">Donating</option>
+                                    <option value="Room hire">Room hire</option>
+                                    <option value="Upcoming events">Upcoming events</option>
+                                    <option value="Foodbank">Foodbank</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="form-right">
+                            <div id="message-div">
+                                <label for="message"><sup>*</sup>Your message:</label>
+                                <textarea cols="50" rows="15" value="message" id="message" required></textarea>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <label for="email"><sup>*</sup>Your email address:</label><br>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    <div>
-                        <label for="phone"><sup><!-- Empty sup is here to align with the message subject --></sup>Your phone number:</label><br>
-                        <input type="text" name="phone" id="phone">
-                    </div>
-                    <div>
-                        <label for="reason"><sup>*</sup>Message subject:</label>
-                        <select required>
-                            <option selected value="Donating">Donating</option>
-                            <option value="Room hire">Room hire</option>
-                            <option value="Upcoming events">Upcoming events</option>
-                            <option value="Foodbank">Foodbank</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                    <div id="message-div">
-                        <label for="message"><sup>*</sup>Your message:</label>
-                        <textarea cols="50" rows="15" value="message" id="message" required></textarea>
-                    </div>
-                    <div id="submit-form-button">
-                        <button type="submit">Send</button>
-                    </div>
+                        
+                        <div id="submit-form-button">
+                            <button type="submit">Send</button>
+                        </div>
                 </form>
             </div>
         </section>
