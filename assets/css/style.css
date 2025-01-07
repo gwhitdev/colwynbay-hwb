@@ -239,14 +239,17 @@ nav {
     text-align: left;
     padding-top: 3rem;
 }
+#news-cards {
+    padding: 0 1.75rem;
+}
 .card {
     text-align: center;
     border-bottom: 1px dashed black;
     padding-bottom: 1rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-    margin-top: 10px;
-    margin-bottom: 1.5rem;
+    margin: 1.75rem 0;
+    padding-bottom: 3rem;
 }
 .card:last-of-type {
     border-bottom: 0;
@@ -256,21 +259,24 @@ nav {
     justify-content: center;
 }
 .news-image img {
-    width: 12.5rem;
+    width: 60%;
+    padding-bottom: 1rem;
 }
 .news-title {
-    margin-top: 5px;
+    margin-top: 1rem;
     font-weight: bold;
 }
 .latest-news h2 {
     color: black;
-    
 }
 .news-date {
     font-weight: bold;
+    padding-bottom: 1rem;
 }
 .news-snippet {
-    margin-top: 1rem;
+    text-align: left;
+    margin: 0 auto;
+    width: 60%;
 }
 
 /* Foodbank and Donations */
