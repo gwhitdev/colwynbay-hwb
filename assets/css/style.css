@@ -296,21 +296,37 @@ nav {
     padding-top: 1rem;
 }
 
-/* Contact Form */
-#contact-form-section {
+/* Donations */
+#donations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     background-color: var(--cus-orange);
     color: black;
-    text-align: center;
-    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
 }
-#contact-form-section h2 {
-    margin-top: 2rem;
+#donations > *{
+    margin: 0 auto;
+}
+#donations h3 {
+    margin-top: 1rem;
+}
+#donations p:last-child {
+    margin-bottom: 1.5rem;
+}
+
+/* Contact Form */
+#contact-form-section {
+    background-color: var(--cus-purple);
+    color: white;
+    text-align: center;
 }
 #contact-form {
     display: flex;
     flex-direction: column;
     font-size: 1.75rem;
-    margin-top: 1rem;
 }
 form {
     width: 90%;
@@ -339,17 +355,19 @@ textarea:focus {
     margin-bottom: 1.5rem;
     font-size: 2rem;
     border: 0;
+    background-color: white;
+    color: var(--cus-purple);
 }
 #contact-form button:hover {
     outline: none;
     cursor: pointer;
-    background-color: var(--cus-orange);
+    background-color: var(--cus-purple);
     border: 1px solid white;
     color: white;
 }
 #contact-form button:active {
     border: 0;
-    box-shadow: 0px 0px 3px 0px black;
+    transform: translate(4px, 5px);
 }
 #contact-form select {
     width: 100%;
@@ -487,7 +505,9 @@ footer {
     .card img {
         width: 100%;
     }
-    #foodbank {
+
+    /* Foodbank & Donations*/
+    #foodbank, #donations {
         padding-top: 1.5rem;
     }
     
@@ -597,16 +617,20 @@ footer {
         font-size: 1rem;
         text-align: left;
     }
-    /* Foodbank */
-    #foodbank {
+    /* Foodbank and Donations*/
+    #foodbank, #donations {
         justify-content: center;
         width: 100%;
     }
-    #foodbank-details, #foodbank-details > *{
+    #foodbank h2, #donations h2 {
         margin: 0 auto;
         text-align: left;
     }
-    #foodbank-details {
+    #foodbank-details, #foodbank-details > *, #donations-details, #donations-details > *{
+        margin: 0 auto;
+        text-align: left;
+    }
+    #foodbank-details, #donations-details {
         width: 33%;
     }
     
