@@ -46,6 +46,7 @@ a:hover {
 }
 #error-details p {
     margin-top: 2rem;
+    padding: 0 4rem;
 }
 #call-to-action {
     margin-top: 2rem;
@@ -57,6 +58,7 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
     border: 1px solid white;
+    font-size: 2.25rem;
 }
 #home-button:hover {
     color: var(--cus-purple);
@@ -67,4 +69,12 @@ a:hover {
     border: 1px solid white;
     color: white;
     background-color: var(--cus-purple);
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    #home-button {
+        font-size: 1rem;
+    }
 }
