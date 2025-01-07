@@ -35,6 +35,9 @@ body {
     flex-direction: column;
     background-color: var(--cus-purple);
 }
+a, a:visited, a:active {
+    color: var(--cus-purple);
+}
 
 
 /* Flex Container */
@@ -279,7 +282,14 @@ nav {
     margin: 0 auto;
     width: 100%;
 }
-
+hr {
+    border: 0;
+    border-bottom: 3px dashed var(--cus-orange);
+    width: 100%;
+}
+#welcome-message-details hr {
+    border-color: white;
+}
 /* Foodbank and Donations */
 #foodbank {
     background-color: var(--cus-purple-rgb);
@@ -409,7 +419,6 @@ footer {
     }
     #welcome-message {
         width: 90%;
-        border-bottom: 1px dashed white;
     }
     #welcome-message,
     #details {
