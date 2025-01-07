@@ -1,0 +1,240 @@
+/* Variables */
+:root {
+    --cus-orange: #F29222;
+    --cus-purple: #77528E;
+    --cus-purple-rgb: 119, 82, 142;
+    --cus-orange-rgb: 242, 146, 34;
+    --solid-primary-font: "Londrina Solid", sans-serif;
+    --primary-font: "Londrina Shadow", sans-serif;
+    --secondary-font: "Fredoka", sans-serif;
+}
+/* Globals */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--solid-primary-font);
+}
+h2 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: 2.75rem;
+}
+h3, h4 {
+    font-family: var(--secondary-font);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body { 
+    min-height: 100vh;
+    font-family: var(--secondary-font);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cus-purple);
+}
+
+
+/* Flex Container */
+#container {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    min-height: 4.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a {
+    text-decoration: none;
+}
+header i {
+    color: var(--cus-purple);
+}
+#logo {
+    font-family: var(--solid-primary-font);
+    color: var(--cus-purple);
+}
+nav {
+    position: absolute;
+    color: var(--cus-purple);
+    font-family: var(--secondary-font);
+    display: none;
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    top: 100%;
+}
+#menu {
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+#menu > li {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+#nav-toggle {
+    display: none;
+}
+.nav-toggle-label {
+    padding-right: 5px;
+}
+.icon {
+    width: 1.5rem;
+}
+.icon path {
+    fill: var(--cus-purple);
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+    height: 600px;
+    background: url('../images/Sunset_over_Colwyn_Bay.webp') no-repeat center center / cover;
+    position: relative;
+   
+}
+#cover-text {
+    background-color: rgba(var(--cus-purple-rgb),0.6);
+    position: absolute;
+    top: 6.25rem;
+    width: 75%;
+    min-height: 20vh;
+    padding-left: 10px;
+    padding-right: 1.5rem;
+}
+#cover-title {
+    font-size: 2.75rem;
+    color: white;
+    line-height: 2.25rem;
+    padding: 1.5rem 0;
+    font-family: var(--solid-primary-font);
+    font-weight: 400;
+}
+/* Footer */
+footer {
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#facebook-logo {
+    width: 2rem;
+    fill: var(--cus-purple);
+    margin: 0 1rem;
+}
+#imprint {
+    font-size: 0.5rem;
+    flex-grow: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 576px) {
+    #cover-title {
+        font-size: 4rem;
+        line-height: 3.25rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        padding-top: 0;
+    }
+    nav {
+        display: flex;
+        position: relative;
+        padding-right: 1rem;
+        justify-content: flex-end;
+    }
+    #menu {
+        display: flex;
+        font-size: 1rem;
+    }
+    #menu > li {
+        margin: 0;
+    }
+    .nav-toggle-label {
+        display: none;
+    }
+    #logo {
+        font-size: 4rem;
+        margin: 0 0.5rem;
+    }
+    #cover-title {
+        line-height: 4.37rem;
+        padding-top: 1.5rem;
+        font-size: 5rem;
+    }
+
+    /* Regular Evemts */
+    #events-cards, #groups-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 1.5rem;
+    }
+    .card {
+        width: 50%;
+        border: none;
+    }
+    .card img {
+        width: 100%;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 922px) {
+   
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 4rem;
+        padding-bottom: 0;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    section {
+        padding-bottom: 2rem;
+    }
+    #logo {
+        padding-left: 0.75rem;
+    }
+    #cover-text {
+        width: 30%;
+        padding-left: 2rem;
+    }
+   
+}
