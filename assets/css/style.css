@@ -139,13 +139,18 @@ nav {
     background-color: var(--cus-purple);
     position: relative;
 }
+#welcome-message > *, #welcome-message-details > * {
+    margin: 0 auto;
+}
+#welcome-message h2 {
+    color: white;
+}
 #welcome-message p {
    color: white;
    text-align: center;
    font-size: 1rem;
    padding: 10px;
 }
-
 #welcome-message p:first-child {
     padding-top: 1.25rem;
     font-weight: 600;
@@ -388,7 +393,6 @@ footer {
         line-height: 3.25rem;
     }
     #welcome-message {
-        margin: 0 auto;
         width: 90%;
     }
     #welcome-message,
@@ -412,12 +416,10 @@ footer {
         position: relative;
         padding-right: 1rem;
         justify-content: flex-end;
-
     }
     #menu {
         display: flex;
         font-size: 1rem;
-
     }
     #menu > li {
         margin: 0;
@@ -436,14 +438,13 @@ footer {
     }
 
     /* Welcome Message */
+    #welcome-message > * {
+        padding: 0 1.25rem;
+    }
     #welcome-message p {
         font-size: 1.75rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
     }
     #welcome-message p:first-child {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
         font-weight: 600;
         font-size: 2.5rem;
     }
@@ -509,16 +510,12 @@ footer {
         justify-content: space-between;
         width: 75%;
     }
-    
-    
- 
 }
 
 @media screen and (min-width: 922px) {
    
     #welcome-message {
         width: 80%;
-        margin: 0 auto;
     }
 }
 
@@ -549,23 +546,24 @@ footer {
         flex-direction: column;
         width: 100%;
     }
+    #welcome-message h2 {
+        text-align: left;
+        width: 60%;
+    }    
     #welcome-message p{
-        margin: 0 auto;
         width: 60%;
         text-align: left;
     }
     #details {
         flex-direction: column;
         width: 46%;
-        margin: 0 auto;
         gap: 2rem;
     }
-    #opening-times, #visit-us {
+    #opening-times > *, #visit-us > * {
         text-align: left;
     }
-    #opening-times h2, #visit-us h2 {
-        text-align: left;
-    }
+
+    /* Carousel */
     .carousel {
         justify-content: center;
         margin: 3rem auto;
@@ -591,20 +589,27 @@ footer {
         height: 30vw;
         align-content: center;
     }
+    
+    /* Latest News */
     .card {
         width: 33%;
         font-size: 1rem;
         text-align: left;
     }
+    /* Foodbank */
     #foodbank {
         justify-content: center;
         width: 100%;
     }
-    #foodbank-details {
+    #foodbank-details, #foodbank-details > *{
         margin: 0 auto;
-        width: 33%;
         text-align: left;
     }
+    #foodbank-details {
+        width: 33%;
+    }
+    
+    /* Contact Form */
     form div {
         width: 49%;
         text-align: left;
@@ -631,10 +636,8 @@ footer {
         text-align: center;
     }
     #message-div label {
-        margin: 0 auto;  
-        text-align: left;
         width: 53%;
-  }
+    }
     #message-div textarea {
         width: 50%;
         margin: 0 auto;
@@ -644,7 +647,4 @@ footer {
         justify-content: center;
         text-align: center
     }
-}
-@media screen and (min-width: 2350px) {
-
 }
