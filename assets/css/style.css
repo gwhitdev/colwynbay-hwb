@@ -35,9 +35,7 @@ body {
     flex-direction: column;
     background-color: var(--cus-purple);
 }
-section {
-    padding-top: 1rem;
-}
+
 
 /* Flex Container */
 #container {
@@ -275,46 +273,30 @@ nav {
     margin-top: 1rem;
 }
 
-/* Foodbank */
+/* Foodbank and Donations */
 #foodbank {
     background-color: var(--cus-purple-rgb);
     color: white;
+}
+#foodbank, #donations {
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 3rem 4rem;
 }
-#foodbank h2 {
-    margin-top: 2rem;
-}
-#foodbank-details {
-    padding: 1rem;
-}
-#foodbank h3 {
-    padding-top: 1rem;
-}
-
-/* Donations */
-#donations {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--cus-orange);
-    color: black;
-    margin-bottom: 2rem;
-    padding: 1rem;
-}
-#donations > *{
-    margin: 0 auto;
-}
-#donations h3 {
+#foodbank, #donations h2 {
     margin-top: 1rem;
 }
-#donations p:last-child {
-    margin-bottom: 1.5rem;
+#foodbank h3, #donations h3 {
+    padding-top: 1rem;
+}
+#donations {
+    background-color: var(--cus-orange);
+    color: black;
+}
+#foodbank > *, #donations > *{
+    margin: 0 auto;
 }
 
 /* Contact Form */
@@ -621,6 +603,8 @@ footer {
     #foodbank, #donations {
         justify-content: center;
         width: 100%;
+        padding-bottom: 6rem;
+        padding-top: 5rem;
     }
     #foodbank h2, #donations h2 {
         margin: 0 auto;
@@ -631,7 +615,7 @@ footer {
         text-align: left;
     }
     #foodbank-details, #donations-details {
-        width: 33%;
+        width: 50%;
     }
     
     /* Contact Form */
