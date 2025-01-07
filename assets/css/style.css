@@ -141,6 +141,7 @@ nav {
 }
 #welcome-message > *, #welcome-message-details > * {
     margin: 0 auto;
+    padding: 1rem;
 }
 #welcome-message h2 {
     color: white;
@@ -149,7 +150,6 @@ nav {
    color: white;
    text-align: center;
    font-size: 1rem;
-   padding: 10px;
 }
 #welcome-message p:first-child {
     padding-top: 1.25rem;
@@ -438,9 +438,6 @@ footer {
     }
 
     /* Welcome Message */
-    #welcome-message > * {
-        padding: 0 1.25rem;
-    }
     #welcome-message p {
         font-size: 1.75rem;
     }
@@ -549,6 +546,7 @@ footer {
     #welcome-message h2 {
         text-align: left;
         width: 60%;
+        padding-bottom: 0;
     }    
     #welcome-message p{
         width: 60%;
@@ -566,7 +564,10 @@ footer {
     /* Carousel */
     .carousel {
         justify-content: center;
-        margin: 3rem auto;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8rem;
         width: 54%;
         height: 30vw;
         box-shadow: 0px 4px 40px 0 black;
