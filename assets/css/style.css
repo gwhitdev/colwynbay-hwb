@@ -606,7 +606,10 @@ footer {
     .card {
         width: 33%;
         font-size: 1rem;
+    }
+    .card .news-snippet {
         text-align: left;
+        width: 100%;
     }
     /* Foodbank and Donations*/
     #foodbank, #donations {
