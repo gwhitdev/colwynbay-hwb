@@ -288,9 +288,9 @@ nav {
 #foodbank, #donations {
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     flex-direction: column;
-    padding: 3rem 4rem;
+    padding: 3rem 3rem;
 }
 #foodbank, #donations h2 {
     margin-top: 1rem;
@@ -308,6 +308,7 @@ nav {
 
 /* Contact Form */
 #contact-form-section {
+    padding-top: 3rem;
     background-color: var(--cus-purple);
     color: white;
     text-align: center;
