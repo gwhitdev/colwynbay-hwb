@@ -159,6 +159,14 @@ nav {
 .card {
     margin: 0 auto;
     margin-bottom: 3rem;
+    border-bottom: 1px dashed white;
+    padding-bottom: 2rem;
+}
+#groups-cards .card {
+    border-color: black;
+}
+.card:last-of-type{
+    border: none;
 }
 .event-title {
     padding-bottom: 1rem;
@@ -166,6 +174,9 @@ nav {
 }
 .event-snippet {
     padding-top: 0.5rem;
+    text-align: left;
+    margin: 0 auto;
+    width: 60%;
 }
 .event-cost {
     padding-top: 0.5rem;
