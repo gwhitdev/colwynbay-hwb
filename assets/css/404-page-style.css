@@ -6,6 +6,9 @@
 }
 
 /* Globals */
+html {
+    scroll-behavior: smooth;
+}
 h1 {
     font-family: var(--solid-primary-font);
     font-size: 4rem;

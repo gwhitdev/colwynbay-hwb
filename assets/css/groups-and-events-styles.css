@@ -9,6 +9,9 @@
     --secondary-font: "Fredoka", sans-serif;
 }
 /* Globals */
+html {
+    scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
