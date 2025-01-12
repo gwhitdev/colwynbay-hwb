@@ -7,8 +7,8 @@
     --solid-primary-font: "Londrina Solid", sans-serif;
     --primary-font: "Londrina Shadow", sans-serif;
     --secondary-font: "Fredoka", sans-serif;
+    --text-dark-purple: #250147;
 }
-
 /* Globals */
 html {
     scroll-behavior: smooth;
@@ -42,7 +42,9 @@ body {
 a, a:visited, a:active {
     color: var(--cus-purple);
 }
-
+a:hover {
+    text-decoration: underline;
+}
 
 /* Flex Container */
 #container {
@@ -145,16 +147,18 @@ nav {
     background-color: var(--cus-purple);
     position: relative;
 }
-#welcome-message > *, #welcome-message-details > * {
+#welcome-message > *,
+#welcome-message-details > *
+{
     margin: 0 auto;
-    padding: 1rem;
+    padding: .5rem 2rem;
 }
 #welcome-message h2 {
     color: white;
 }
 #welcome-message p {
    color: white;
-   text-align: center;
+   text-align: left;
    font-size: 1rem;
 }
 #welcome-message p:first-child {
@@ -162,27 +166,27 @@ nav {
     font-weight: 600;
 }
 
-/* Opening Times */
+/* Details and Opening Times */
+#details div {
+    padding: 0.75rem 2rem;
+}
 #opening-times {
     background-color: var(--cus-purple);
-    min-height: 10vh;
     color: white;
-    text-align: center;
-    padding-top: 1.5rem;
+    text-align: left;
     position: relative;
+    width: 90%;
 }
 #opening-times > h2 {
     font-weight: bold;
 }
-#times {
-    margin-top: 10px;
-}
+
 #visit-us {
     position: relative;
     color: white;
-    text-align: center;
-    margin-top: 1.5rem;
-    padding-bottom: 3rem;
+    text-align: left;
+    width: 90%;
+    margin-bottom: 3rem;
 }
 
 /* Carousel */
@@ -274,8 +278,8 @@ nav {
     margin-top: 1rem;
     font-weight: bold;
 }
-.latest-news h2 {
-    color: black;
+.latest-news, .latest-news h2 {
+    color: var(--text-dark-purple);
 }
 .news-date {
     font-weight: bold;
@@ -314,7 +318,7 @@ hr {
 }
 #donations {
     background-color: var(--cus-orange);
-    color: black;
+    color: var(--text-dark-purple);
 }
 #foodbank > *, #donations > *{
     margin: 0 auto;
@@ -393,23 +397,23 @@ textarea:focus {
 footer {
     width: 100%;
     height: 5rem;
-    background-color: white;
+    background-color: var(--cus-purple);
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: row;
+    color: white;
 }
-
 #facebook-logo {
-    width: 2rem;
-    fill: var(--cus-purple);
-    margin: 0 1rem;
+    width: 3rem;
+    fill: white;
+    margin: 0 3rem;
 }
 #imprint {
-    font-size: 0.5rem;
+    font-size: 1rem;
     flex-grow: 1;
     text-align: right;
-    padding-right: 10px;
+    padding-right: 3rem;
 }
 
 /* MEDIA QUERIES */
@@ -420,9 +424,6 @@ footer {
     #cover-title {
         font-size: 4rem;
         line-height: 3.25rem;
-    }
-    #welcome-message {
-        width: 90%;
     }
     #welcome-message,
     #details {
@@ -482,21 +483,21 @@ footer {
     #details {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        gap: 6.25rem;
+        justify-content: space-between;
         padding-top: 2.25rem;
     }
 
     /* Opening Times */
     #opening-times {
         margin-top: 0;
-        padding-top: 0;
+        width: 150%;
     }
     #opening-times > h2, #visit-us > h2 {
         font-size: 3.5rem;
     }
     #visit-us {
         margin-top: 0;
+        margin-left: 3rem;
     }
    
     /* Carousel */
@@ -543,9 +544,6 @@ footer {
 
 @media screen and (min-width: 922px) {
    
-    #welcome-message {
-        width: 80%;
-    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -557,7 +555,7 @@ footer {
         padding-bottom: 0;
     }
     h3 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     section {
         padding-bottom: 2rem;
@@ -576,21 +574,21 @@ footer {
         width: 100%;
     }
     #welcome-message h2 {
-        text-align: left;
         width: 60%;
         padding-bottom: 0;
     }    
     #welcome-message p{
         width: 60%;
         text-align: left;
+        padding-left: 3rem;
     }
     #details {
         flex-direction: column;
-        width: 46%;
-        gap: 2rem;
+        width: 60%;
     }
-    #opening-times > *, #visit-us > * {
-        text-align: left;
+    #visit-us, #opening-times {
+        width: 60%;
+        margin-left: 0;
     }
 
     /* Carousel */
