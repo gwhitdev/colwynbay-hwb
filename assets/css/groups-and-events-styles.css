@@ -26,6 +26,7 @@ h2 {
 }
 h3, h4 {
     font-family: var(--secondary-font);
+    font-size: 1rem;
 }
 * {
     padding: 0;
@@ -38,7 +39,13 @@ body {
     flex-direction: column;
     background-color: var(--cus-purple);
 }
-
+a, a:visited, a:active {
+    color: var(--cus-purple);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 
 /* Flex Container */
 #container {
@@ -63,9 +70,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-header a {
-    text-decoration: none;
 }
 header i {
     color: var(--cus-purple);
@@ -143,7 +147,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: left;
 }
 
 /* Events */
@@ -153,7 +157,7 @@ nav {
 
 /* Cards */
 #regular-events img, #regular-groups img {
-    width: 100%;
+    width: 450px;
     object-fit: cover;
     object-position: 50% 30%;
     height: 200px;
@@ -207,11 +211,21 @@ nav {
 #room-hire {
     color: white;
 }
+#room-hire a, #room-hire a:active, #room-hire a:visited {
+    color: white;
+    text-decoration: underline;
+}
+#room-hire a:hover {
+    text-decoration: none;
+}
 #room-hire-details {
     padding: 0 2rem;
 }
 #room-hire p {
     margin-bottom: 1rem;
+}
+#room-hire ul {
+    margin-left: 2rem;
 }
 /* Footer */
 footer {
@@ -306,7 +320,7 @@ footer {
         padding-bottom: 0;
     }
     h3 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     section {
         padding-bottom: 2rem;
