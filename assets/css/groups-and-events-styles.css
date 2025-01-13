@@ -33,7 +33,6 @@ h3, h4 {
     box-sizing: border-box;
 }
 body { 
-    min-height: 100vh;
     font-family: var(--secondary-font);
     display: flex;
     flex-direction: column;
@@ -45,10 +44,12 @@ body {
 #container {
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 .row {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 /* Header */
@@ -155,15 +156,14 @@ nav {
     width: 100%;
     object-fit: cover;
     object-position: 50% 30%;
-    height: 20rem;
 }
 #events-cards, #groups-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 1.75rem;
-    gap: 5px;
     width: 100%;
+    margin: 0 auto;
 }
 .card {
     margin: 0 auto;
@@ -243,6 +243,14 @@ footer {
         font-size: 4rem;
         line-height: 3.25rem;
     }
+    #events-cards, #groups-cards {
+        width: 550px;
+        
+    }
+    #events-cards img, #groups-cards img{
+        height: 300px;    
+        width: 500px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -275,22 +283,7 @@ footer {
         font-size: 5rem;
     }
 
-    /* Regular Evemts */
-    #events-cards, #groups-cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 90%;
-        padding-top: 1.5rem;
-        margin: 0 auto;
-    }
-    .card {
-        width: 45%;
-        border: none;
-    }
-    .card img {
-        width: 100%;
-    }
+   
 }
 
 @media screen and (min-width: 922px) {
@@ -327,7 +320,31 @@ footer {
     #events-cards, #groups-cards {
         flex-direction: row;
    }
-   .card {
-    width: 33%;
-   }
+   
+    /* Regular Evemts */
+    #events-cards, #groups-cards {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        padding-top: 1.5rem;
+        margin: 0 auto;
+    }
+    #events-cards img, #groups-cards img {
+        width: 100%;
+    }
+    .card {
+        width: 33%;
+        border: none;
+    }
+   
+    @media screen and (min-width: 2000px) {
+        .card {
+            width: 15%;
+            border: none;
+        }
+        #events-cards img, #groups-cards img {
+            height: 200px;
+        }
+    }
 }
