@@ -275,7 +275,6 @@ nav {
     height: 300px;
     padding-bottom: 1rem;
     object-fit: cover;
-
 }
 .news-title {
     margin-top: 1rem;
@@ -306,6 +305,13 @@ hr {
     background-color: var(--cus-purple-rgb);
     color: white;
 }
+#foodbank a, #foodbank a:active, #foodbank a:visited {
+    color: white;
+    text-decoration: underline;
+}
+#foodbank a:hover {
+    text-decoration: none;
+}
 #foodbank, #donations {
     display: flex;
     justify-content: center;
@@ -322,6 +328,12 @@ hr {
 #donations {
     background-color: var(--cus-orange);
     color: var(--text-dark-purple);
+}
+#donations a, #donations a:active, #donations a:visited {
+    text-decoration: underline;
+}
+#donations a:hover {
+    text-decoration: none;
 }
 #foodbank > *, #donations > *{
     margin: 0 auto;
