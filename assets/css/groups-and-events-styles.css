@@ -46,7 +46,11 @@ a, a:visited, a:active {
 a:hover {
     text-decoration: underline;
 }
-
+hr {
+    border: 0;
+    border-bottom: 3px dashed var(--cus-orange);
+    width: 100%;
+}
 /* Flex Container */
 #container {
     display: flex;
@@ -120,7 +124,6 @@ nav {
     height: 350px;
     background: url('../images/Sunset_over_Colwyn_Bay.webp') no-repeat center center / cover;
     position: relative;
-   
 }
 #cover-text {
     background-color: rgba(var(--cus-purple-rgb),0.6);
