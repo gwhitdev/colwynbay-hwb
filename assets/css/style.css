@@ -255,7 +255,7 @@ nav {
     padding: 0 1.75rem;
 }
 .card {
-    text-align: center;
+    text-align: left;
     border-bottom: 1px dashed black;
     padding-bottom: 1rem;
     padding-left: 1.25rem;
@@ -272,7 +272,10 @@ nav {
 }
 .news-image img {
     width: 100%;
+    height: 300px;
     padding-bottom: 1rem;
+    object-fit: cover;
+
 }
 .news-title {
     margin-top: 1rem;
