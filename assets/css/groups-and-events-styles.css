@@ -254,13 +254,15 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 576px) {
+    .hero {
+        height: 450px;
+    }
     #cover-title {
         font-size: 4rem;
         line-height: 3.25rem;
     }
     #events-cards, #groups-cards {
         width: 550px;
-        
     }
     #events-cards img, #groups-cards img{
         height: 300px;    
@@ -291,6 +293,9 @@ footer {
     #logo {
         font-size: 4rem;
         margin: 0 0.5rem;
+    }
+    .hero {
+        height: 550px;
     }
     #cover-title {
         line-height: 4.37rem;
