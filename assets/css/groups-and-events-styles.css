@@ -9,6 +9,9 @@
     --secondary-font: "Fredoka", sans-serif;
     --text-dark-purple: #250147;
 }
+.active {
+    font-weight: bold;
+}
 /* Globals */
 html {
     scroll-behavior: smooth;
@@ -283,6 +286,7 @@ footer {
         padding-right: 1rem;
         justify-content: flex-end;
     }
+    
     #menu {
         display: flex;
         font-size: 1rem;

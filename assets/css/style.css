@@ -10,6 +10,9 @@
     --text-dark-purple: #250147;
 }
 /* Globals */
+.active {
+    font-weight: bold;
+}
 html {
     scroll-behavior: smooth;
 }
