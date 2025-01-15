@@ -147,7 +147,7 @@ nav {
 }
 
 /* Generic sections */
-#regular-events, #regular-groups, #room-hire {
+#events, #regular-groups, #room-hire {
     padding-top: 3rem;
     width: 100%;
     display: flex;
@@ -157,12 +157,12 @@ nav {
 }
 
 /* Events */
-#regular-events {
+#events {
     color: white;
 }
 
 /* Cards */
-#regular-events img, #regular-groups img {
+#events img, #regular-groups img {
     width: 100%;
     object-fit: cover;
     object-position: 50% 30%;

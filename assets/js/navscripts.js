@@ -29,8 +29,10 @@ const detectInView = () => {
         const sectionToMatch = listOfSections[section]; // Assign the section to match with the target link below
         if (isInViewPort(sectionToMatch)) {
             for (let link = 0; link < links.length; link++) {
-                const targetLink = links[link].href.split('#')[1]; // Assign specific anchor tag from the list of links in the nav menu
-                targetLink === listOfSections[section].id ? targetLink.classList.add('active') : targetLink.classList.remove('active');
+                
+                const targetLinkText = links[link].href.split('#')[1]; // Assign specific anchor tag from the list of links in the nav menu
+                const targetLink = links[link];
+                targetLinkText === sectionToMatch.id ? targetLink.classList.add('active') : targetLink.classList.remove('active');
             }
         }
     }
