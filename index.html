@@ -67,8 +67,8 @@
             <ul id="menu">
                 <li><a href="index.html#donations" aria-label="Click to visit How to donate to us">Donations</a></li>
                 <li><a href="index.html#foodbank" aria-label="Click to visit Foodbank information">Foodbank</a></li>
-                <li><a href="groups-and-events.html" aria-label="Click to visit Regular Events">Regular Events</a></li>
-                <li><a href="groups-and-events.html#regular-groups" aria-label="Click to visit Regular Gvents">Regular Groups</a></li>
+                <li><a href="groups-and-events.html#" aria-label="Click to visit Regular Events">Regular Events</a></li>
+                <li><a href="groups-and-events.html#regular-groups" aria-label="Click to visit Regular Events">Regular Groups</a></li>
                 <li><a href="groups-and-events.html#room-hire" aria-label="Click to visit Room hire">Room Hire</a></li>
                 <li><a href="index.html#contact-form-section" aria-label="Click to visit Contact us">Contact us</a></li>
             </ul>
@@ -135,7 +135,7 @@
         </div>
         <hr>
         <!-- Latest news section -->
-        <section class="latest-news" id="latest-news">
+        <section id="latest-news">
             <h2>Latest News</h2>
             <!-- Latest news cards -->
             <div id="news-cards">
@@ -199,11 +199,9 @@
                         Last weekend's community clean-up day was a huge success, with dozens of volunteers coming together to pick up litter, plant trees, and beautify public spaces. The event was organized by the local environmental group and received support from several local businesses. The clean-up day took place on 7 June, 2024, and organizers plan to make this an annual event to keep the community clean and green.
                     </div>
                 </div>
-                
-                
             </div>
         </section>
-        <hr>
+        <hr data-nav="foodbank">
         <!-- Foodbank information section -->
         <section id="foodbank">
             <div id="foodbank-details">
@@ -219,7 +217,7 @@
                 </p>
             </div>
         </section>
-        <hr>
+        <hr data-nav="donations">
         <section id="donations">
             <div id="donations-details">
                 <h2>Donate to us</h2>
@@ -237,14 +235,13 @@
                 </p>
             </div>
         </section>
-        <hr>
-        <section id="contact-form-section"><!-- Extra tag to help trigger nav script --></section>
+        <hr data-nav="contact-form-section">
         <!-- Contact form section -->
         <section id="contact-form-section">
             <div id="contact-form">
                 <h2>Contact us</h2>
-                <span><sup>*</sup> = required</span>
                 <form>
+                    <span><sup>*</sup> = required</span>
                     <div id="form-column">
                         <div id="form-left">
                             <div>

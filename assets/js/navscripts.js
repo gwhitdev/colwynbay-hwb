@@ -2,7 +2,7 @@ const navMenu = document.getElementById("menu"); // Get nav menu
 const links = navMenu.getElementsByTagName('a'); // Get links by selected anchor tag within navMenu
 const navToggle = document.getElementById('nav-toggle') // Get navToggle check box
 const container = document.getElementById('container'); // Get container div
-const listOfSections = document.getElementsByTagName('section'); // Return the list of sections in the page to iterate over below
+const listOfSections = document.getElementsByTagName('hr'); // Return the list of sections in the page to iterate over below
 container.addEventListener('click', () =>  navToggle.checked === true ? navToggle.checked = false : ''); // Hide nav menu if user clicks on the web page when menu is open
 
 // Loop through links and hide nav menu if checkbox is true
@@ -17,7 +17,6 @@ const detectInView = () => {
     // Returns TRUE if a section tag is in the viewport
     // The isInViewPort function was written with help from StackOverflow regarding how to grab the top and bottom distance from the getBoundingClientRec function and apply that to some logic
     const isInViewPort = (section) => {
-        console.log(section)
         const distance = section.getBoundingClientRect();
         return (
             distance.top >= 0 &&
@@ -29,10 +28,10 @@ const detectInView = () => {
         const sectionToMatch = listOfSections[section]; // Assign the section to match with the target link below
         if (isInViewPort(sectionToMatch)) {
             for (let link = 0; link < links.length; link++) {
-                
                 const targetLinkText = links[link].href.split('#')[1]; // Assign specific anchor tag from the list of links in the nav menu
                 const targetLink = links[link];
-                targetLinkText === sectionToMatch.id ? targetLink.classList.add('active') : targetLink.classList.remove('active');
+                console.log(targetLinkText, sectionToMatch.dataset.nav);
+                targetLinkText === sectionToMatch.dataset.nav ? targetLink.classList.add('active') : targetLink.classList.remove('active');
             }
         }
     }

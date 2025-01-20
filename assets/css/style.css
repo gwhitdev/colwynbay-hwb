@@ -248,7 +248,7 @@ nav {
 }
 
 /* Latest News */
-.latest-news {
+#latest-news {
     width: 100%;
     background-color: var(--cus-orange);
     text-align: left;
@@ -283,7 +283,7 @@ nav {
     margin-top: 1rem;
     font-weight: bold;
 }
-.latest-news, .latest-news h2 {
+#latest-news, #latest-news h2 {
     color: var(--text-dark-purple);
 }
 .news-date {
@@ -347,7 +347,7 @@ hr {
     padding-top: 3rem;
     background-color: var(--cus-purple);
     color: white;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
