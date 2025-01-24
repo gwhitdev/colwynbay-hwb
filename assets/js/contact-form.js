@@ -77,16 +77,4 @@ closeModalButton.addEventListener("click", (e) => {
     modalContentText.innerHTML = ""; // Remove created nodes to clear submitted text for further use
     submitButton.disabled = false; // Re-enable submit button
 })
-/*Make the button spin
-closeModalButton.addEventListener("mouseover", (e) => {
-    e.preventDefault()
-    closeModalButton.classList.remove("spinOut");
-    closeModalButton.classList.add("spinIn");
-});
 
-// Make the button spin again
-closeModalButton.addEventListener("mouseleave", (e) => {
-    e.preventDefault()
-    closeModalButton.classList.remove("spinIn");
-    closeModalButton.classList.add("spinOut")
-});*/
