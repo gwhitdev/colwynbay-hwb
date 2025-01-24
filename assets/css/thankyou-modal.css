@@ -1,0 +1,65 @@
+:root {
+    --cus-purple: #77528E;
+    --solid-primary-font: "Londrina Solid", sans-serif;
+}
+/* Modal Styling */
+#modal {
+    position: fixed;
+    bottom: 10%;
+    left: 25%;
+    background-color: rgba(0,0,0, 0.1);
+    width: 50%;
+    height: 55%;
+    backdrop-filter: blur(20px);
+    box-shadow: 1px 1rem 1rem rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+}
+#modal-header {
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: var(--solid-primary-font);
+    color: var(--cus-purple);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#close-modal {
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--cus-purple);
+    background: none;
+    border: 3px dashed var(--cus-purple);
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+}
+.spinIn {
+    transform: rotate(360deg);
+    transition: 1.5s ease;
+}
+.spinOut {
+    transform: rotate(-360deg);
+    transition: 1.5s ease;
+}
+#modal-body {
+    width: 100%;
+    padding: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+#modal-submitted-details {
+    margin-top: 1.25rem;
+}
+
+/* Modal Controls */
+.modal-hide {
+    display: none;
+}
+.modal-show {
+    display: flex;
+}

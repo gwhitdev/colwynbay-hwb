@@ -37,10 +37,11 @@
         type="font/woff2"
         href="https://fonts.gstatic.com/s/fredoka/v14/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OryL8H-mKpNk.woff2"
     />
-    <link rel="preload" fetchpriority="high" as="style" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap">
     <!-- Stylesheets -->
-    <link rel="stylesheet" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap"/>
-    <link rel="stylesheet" fetchpriority="high" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/thankyou-modal.css">
     <!-- Title -->
     <title>Colwyn Bay Community Hwb and Foodbank</title>
 </head>
@@ -75,7 +76,7 @@
         </nav>
     </header>
     <!-- Main container -->
-    <div id="container">
+    <div id="container" class="container-noblur">
         <!-- Hero image -->
         <div class="hero">
             <div id="cover-text">
@@ -146,7 +147,7 @@
                         <img src="assets/images/news/eirias_park.webp" aria-label="Local Park Renovation Project Completed" alt="Local Park Renovation Project Completed: Photo by Kampus Production: https://www.pexels.com/photo/food-on-the-picnic-blanket-7669122/">
                     </div>
                     <div class="news-snippet">
-                        The long-awaited renovation of Eirias Park has been completed. The park now features new playground equipment, a modernized picnic area, and improved walking trails. The community is invited to a grand reopening event on 20 January , 2025, which will include a ribbon-cutting ceremony, live music, and family-friendly activities.
+                        The long-awaited renovation of Eirias Park has been completed. The park now features new playground equipment, a modernized picnic area, and improved walking trails. The community is invited to a grand reopening event on 20 January 2025, which will include a ribbon-cutting ceremony, live music, and family-friendly activities.
                     </div>
                 </div>
                 <div class="card">
@@ -259,19 +260,19 @@
                             </div>
                             <div>
                                 <label for="reason"><sup>*</sup>Message subject:</label>
-                                <select required>
-                                    <option selected value="Donating">Donating</option>
-                                    <option value="Room hire">Room hire</option>
-                                    <option value="Upcoming events">Upcoming events</option>
-                                    <option value="Foodbank">Foodbank</option>
-                                    <option value="Other">Other</option>
+                                <select required id="reason" name="reason">
+                                    <option selected name="Donating" value="Donating">Donating</option>
+                                    <option name="Room hire">Room hire</option>
+                                    <option name="Upcoming events">Upcoming events</option>
+                                    <option name="Foodbank">Foodbank</option>
+                                    <option name="Other">Other</option>
                                 </select>
                             </div>
                         </div>
                         <div id="form-right">
                             <div id="message-div">
                                 <label for="message"><sup>*</sup>Your message:</label>
-                                <textarea cols="50" rows="15" value="message" id="message" required></textarea>
+                                <textarea cols="50" rows="15" name="message" id="message" required></textarea>
                             </div>
                         </div>
                     </div>
@@ -282,6 +283,25 @@
                 </form>
             </div>
         </section>
+        <div id="modal" class="modal-hide">
+            <div id="modal-header">
+                <span>Thank you!</span>
+                <span>
+                    <button id="close-modal">
+                        x
+                    </button>
+                </span>
+            </div>
+            <div id="modal-body">
+                Thank you for contacting us.<br>
+                We will review your message and get in touch as soon as possible.
+                <div id="modal-submitted-details">
+                    <strong>Message sent:</strong><br>
+                    <!-- Submitted details -->
+
+                </div>
+            </div>
+        </div>
         <!-- FOOTER -->
         <footer>
                 <div class="social">
@@ -299,5 +319,6 @@
     <!-- JavaScript for carousel feature -->
      <script src="assets/js/navscripts.js"></script>
     <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/contact-form.js"></script>
 </body>
 </html>
