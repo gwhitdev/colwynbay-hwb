@@ -25,9 +25,14 @@ const formFields = [
 /*** and get each input field value then assign to the above array of objects. ***/
 const submitButton = document.getElementById("submit-form-button");
 const modal = document.getElementById("modal");
+const containerToBlur = document.getElementById("container");
+const body = document.getElementsByTagName("body")[0];
 
 submitButton.addEventListener("click", (e) => {
     e.preventDefault();
+    containerToBlur.classList.remove("container-noblur");
+    containerToBlur.classList.add("container-blur");
+    body.classList.toggle("stop-scrolling");
     if (modal.classList.contains("modal-show") === false ) {
         const inputs = document.querySelectorAll(["input","select","textarea"]);
         inputs.forEach(input => {
@@ -60,22 +65,28 @@ submitButton.addEventListener("click", (e) => {
 /*** Modal Close Button **/
 const closeModalButton = document.getElementById("close-modal");
 const modalContentText = document.getElementById("modal-submitted-details");
+
+
 closeModalButton.addEventListener("click", (e) => {
     e.preventDefault();
+    body.classList.toggle("stop-scrolling");
+    containerToBlur.classList.remove("container-blur");
+    containerToBlur.classList.add("container-noblur");
     modal.classList.remove("modal-show");
     modal.classList.add('modal-hide')
     modalContentText.innerHTML = ""; // Remove created nodes to clear submitted text for further use
     submitButton.disabled = false; // Re-enable submit button
 })
-// Make the button spin
+/*Make the button spin
 closeModalButton.addEventListener("mouseover", (e) => {
     e.preventDefault()
     closeModalButton.classList.remove("spinOut");
     closeModalButton.classList.add("spinIn");
 });
+
 // Make the button spin again
 closeModalButton.addEventListener("mouseleave", (e) => {
     e.preventDefault()
     closeModalButton.classList.remove("spinIn");
     closeModalButton.classList.add("spinOut")
-});
+});*/

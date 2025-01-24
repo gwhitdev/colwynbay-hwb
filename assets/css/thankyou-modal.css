@@ -5,12 +5,10 @@
 /* Modal Styling */
 #modal {
     position: fixed;
-    bottom: 10%;
+    bottom: 30%;
     left: 25%;
-    background-color: rgba(0,0,0, 0.1);
-    width: 50%;
-    height: 55%;
-    backdrop-filter: blur(20px);
+    width: auto;
+    background-color: var(--cus-purple);
     box-shadow: 1px 1rem 1rem rgba(0, 0, 0, 0.5);
     flex-direction: column;
 }
@@ -28,23 +26,22 @@
     justify-content: space-between;
 }
 #close-modal {
+    cursor: pointer;
+}
+#close-modal-button {
+    border: none;
     font-weight: bold;
     font-size: 1.2rem;
-    cursor: pointer;
     color: var(--cus-purple);
-    background: none;
-    border: 3px dashed var(--cus-purple);
-    margin-right: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
+    background: transparent;
+    border-bottom: 0;
 }
-.spinIn {
-    transform: rotate(360deg);
-    transition: 1.5s ease;
+#close-modal-text:hover {
+    border-bottom: 2px solid var(--cus-purple);
+    cursor: pointer;
 }
-.spinOut {
-    transform: rotate(-360deg);
-    transition: 1.5s ease;
-}
+
 #modal-body {
     width: 100%;
     padding: 3rem;
@@ -55,6 +52,18 @@
 #modal-submitted-details {
     margin-top: 1.25rem;
 }
+.container-noblur {
+    filter: none;
+    transition: 0.1s ease-in-out;
+}
+.container-blur {
+    transition: 0.1s ease-in-out;
+    filter: blur(20px) grayscale(100%);
+}
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
 
 /* Modal Controls */
 .modal-hide {
@@ -63,3 +72,4 @@
 .modal-show {
     display: flex;
 }
+
