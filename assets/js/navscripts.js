@@ -30,7 +30,6 @@ const detectInView = () => {
             for (let link = 0; link < links.length; link++) {
                 const targetLinkText = links[link].href.split('#')[1]; // Assign specific anchor tag from the list of links in the nav menu
                 const targetLink = links[link];
-                console.log(targetLinkText, sectionToMatch.dataset.nav);
                 targetLinkText === sectionToMatch.dataset.nav ? targetLink.classList.add('active') : targetLink.classList.remove('active');
             }
         }
