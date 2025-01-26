@@ -412,6 +412,11 @@ textarea:focus {
     border: 0;
 }
 
+.errors {
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+}
 /* Footer */
 footer {
     width: 100%;

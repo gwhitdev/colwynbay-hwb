@@ -241,39 +241,43 @@
         <section id="contact-form-section">
             <div id="contact-form">
                 <h2>Contact us</h2>
-                <form>
+                <form id="contact-us-form" aria-label="Contact Form">
                     <span><sup>*</sup> = required</span>
                     <div id="form-column">
                         <div id="form-left">
                             <div>
                                 <label for="name"><sup>*</sup>Your name:</label><br>
-                                <input type="text" name="name" id="name" required>
-                                
+                                <input type="text" name="name" id="name" required class="readable-input">
+                                <div style="display:none" class="errors" id="error-name">Please enter your name.</div>
                             </div>
                             <div>
                                 <label for="email"><sup>*</sup>Your email address:</label><br>
-                                <input type="email" name="email" id="email" required>
+                                <input type="email" name="email" id="email" required class="readable-input">
+                                <div style="display:none" class="errors" id="error-email">Please enter your email address.</div>
                             </div>
                             <div>
-                                <label for="phone"><sup><!-- Empty sup is here to align with the message subject --></sup>Your phone number:</label><br>
-                                <input type="text" name="phone" id="phone">
+                                <label for="phone"><sup>*</sup>Your phone number:</label><br>
+                                <input type="text" name="phone" id="phone" class="readable-input">
+                                <div style="display:none" class="errors" id="error-phone">Please enter your phone number.</div>
                             </div>
                             <div>
                                 <label for="reason"><sup>*</sup>Message subject:</label>
-                                <select required id="reason" name="reason">
+                                <select required id="reason" name="reason" class="readable-input">
                                     <option selected name="Donating" value="Donating">Donating</option>
                                     <option name="Room hire">Room hire</option>
                                     <option name="Upcoming events">Upcoming events</option>
                                     <option name="Foodbank">Foodbank</option>
                                     <option name="Other">Other</option>
                                 </select>
+                                <div style="display:none" class="errors" id="error-reason">Please choose a message subject.</div>
                             </div>
                         </div>
                         <div id="form-right">
                             <div id="message-div">
                                 <label for="message"><sup>*</sup>Your message:</label>
-                                <textarea cols="50" rows="15" name="message" id="message" required></textarea>
+                                <textarea cols="50" rows="15" name="message" id="message" required class="readable-input"></textarea>
                             </div>
+                            <div style="display:none" class="errors" id="error-message">Please enter a message.</div>
                         </div>
                     </div>
                         
