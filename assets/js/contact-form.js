@@ -43,7 +43,6 @@ const resetInputs = (inputs) => {
 const lastDetailsDiv = {"element":null};
 submitButton.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log('clicked');
     const inputs = document.getElementsByClassName("readable-input");
     const formFields = [];
     const generateRandomId = () => Math.floor(Math.random()*100);
@@ -54,10 +53,7 @@ submitButton.addEventListener("click", (e) => {
     const details = document.createElement("div");
     details.id = `submitted-details-${generateRandomId()}`;
     lastDetailsDiv.element = details;
-    console.log(validated)
     if (validated.numOfErrors === 0) {
-        console.log('here');
-
         containerToBlur.classList.remove("container-noblur");
         containerToBlur.classList.add("container-blur");
         body.classList.toggle("stop-scrolling");
