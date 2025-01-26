@@ -1,22 +1,33 @@
-
-/*** Get submit button and assign event listener to open modal ***/
-/*** and get each input field value then assign to the above array of objects. ***/
+/*** Validate user input into contact form, capture the data and then inject into a modal for confirmation ***/
+/* Get submit button and assign event listener to open modal */
+/* and get each input field value then assign to the above array of objects. */
 const submitButton = document.getElementById("submit-form-button");
 const modal = document.getElementById("modal");
 const containerToBlur = document.getElementById("container");
 const body = document.getElementsByTagName("body")[0];
-
 const validateInput = (inputs) => {
     const messageToShow = [];
     messageToShow.numOfErrors = 0;
     for(let input of inputs) {
-        if (input.id)
+        if (input.id) {
             messageToShow.push({
                 "div": `error-${input.id}`,
                 "state": input.value === "" ? "show" : "hide", // Decide on state of style:display value for element
             })
             input.value === "" ? messageToShow.numOfErrors += 1 : ""; // Count errors and add to array
+            if (input.id === "phone") {
+                messageToShow.push(
+                    {
+                        "div": "error-phone-incorrect-number",
+                        "state": !Number(input.value) || input.value.length !== 11 ? "show" : "hide", // Check if value is NaN or not the UK phone number length
+                    }
+                )
+                messageToShow.numOfErrors += 1;
+            }
+
+        }
     }
+    console.log(messageToShow);
     return messageToShow;
 }
 const showOrHideErrors = (elements) => {

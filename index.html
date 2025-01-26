@@ -257,8 +257,9 @@
                             </div>
                             <div>
                                 <label for="phone"><sup>*</sup>Your phone number:</label><br>
-                                <input type="text" name="phone" id="phone" class="readable-input">
-                                <div style="display:none" class="errors" id="error-phone">Please enter your phone number.</div>
+                                <input type="tel" name="phone" id="phone" class="readable-input" placeholder="01492500000">
+                                <div style="display: none" class="errors" id="error-phone">Please enter your phone number.</div>
+                                <div style="display: none" class="errors" id="error-phone-incorrect-number">Please enter a valid UK phone number with area code.</div>
                             </div>
                             <div>
                                 <label for="reason"><sup>*</sup>Message subject:</label>
@@ -280,7 +281,6 @@
                             <div style="display:none" class="errors" id="error-message">Please enter a message.</div>
                         </div>
                     </div>
-                        
                         <div id="submit-form-button">
                             <button type="submit">Send</button>
                         </div>
