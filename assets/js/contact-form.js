@@ -1,62 +1,80 @@
-/*** Validate user input into contact form, capture the data and then inject into a modal for confirmation ***/
-/* Get submit button and assign event listener to open modal */
-/* and get each input field value then assign to the above array of objects. */
+/***
+ Validate user input into contact form, capture the data and then inject into a modal for confirmation
+ ***/
 const submitButton = document.getElementById("submit-form-button");
 const modal = document.getElementById("modal");
 const containerToBlur = document.getElementById("container");
 const body = document.getElementsByTagName("body")[0];
+
 const validateInput = (inputs) => {
     const messageToShow = [];
     messageToShow.numOfErrors = 0;
-    for(let input of inputs) {
-        if (input.id) {
-            messageToShow.push({
-                "div": `error-${input.id}`,
-                "state": input.value === "" ? "show" : "hide", // Decide on state of style:display value for element
-            })
-            input.value === "" ? messageToShow.numOfErrors += 1 : null; // Count errors and add to array
-            if (input.id === "phone") {
-                messageToShow.push(
-                    {
-                        "div": "error-phone-incorrect-number",
-                        "state": !Number(input.value) || input.value.length !== 11 ? "show" : "hide", // Check if value is NaN or not the UK phone number length
-                    }
-                )
-                !Number(input.value) || input.value.length !== 11 ? messageToShow.numOfErrors += 1 : null;
+    const isPhoneNumberValid = phoneNumber => Number(phoneNumber) || phoneNumber.length === 11;
+    const isInputAnEmptyString = text => text === "";
+    const incrementNumOfErrors = () => messageToShow.numOfErrors += 1;
+
+    const validatePhoneNumberInput = input => {
+        messageToShow.push(
+            {
+                "div": "error-phone-incorrect-number",
+                "state":  !isPhoneNumberValid(input.value) ? "show" : "hide", // Check if value is NaN or not the UK phone number length
             }
-        }
+        )
+        !isPhoneNumberValid(input.value) ? incrementNumOfErrors() : null;
+    }
+
+    const validateTextInputs = input => {
+        messageToShow.push({
+            "div": `error-${input.id}`,
+            "state": isInputAnEmptyString(input.value) ? "show" : "hide", // Decide on state of style:display value for element
+        })
+        isInputAnEmptyString(input.value) ? incrementNumOfErrors() : null;
+    }
+
+    for (let input of inputs) {
+        if (input.id) validateTextInputs(input);
+        if (input.id && input.id === "phone") validatePhoneNumberInput(input);
     }
     return messageToShow;
 }
+
 const showOrHideErrors = (elements) => {
     elements.forEach(element => {
         if (element.state === "show") document.getElementById(element.div).style.display = "block";
         if (element.state === "hide") document.getElementById(element.div).style.display = "none";
     })
 }
+
 const resetInputs = (inputs) => {
     for (let input of inputs) {
         if (input.id === "reason") input.value = "Donating";
         else input.value = "";
     }
 }
+
 const lastDetailsDiv = {"element":null};
+
 submitButton.addEventListener("click", (e) => {
     e.preventDefault();
     const inputs = document.getElementsByClassName("readable-input");
     const formFields = [];
-    const generateRandomId = () => Math.floor(Math.random()*100);
+    const generateRandomId = () => Math.floor(Math.random()*100); // Generate a random number to add to the div id to create a unique div to destroy correctly
     const validated = validateInput(inputs);
-    showOrHideErrors(validated); // Check if there any validation messages to show
-    /* Modal actions */
+    showOrHideErrors(validated); // Create any errors where necessary and manipulate the DOM as appropriate
+    /*
+    Modal actions
+    */
     const modalSubmittedDetails = document.getElementById("modal-submitted-details");
     const details = document.createElement("div");
+
     details.id = `submitted-details-${generateRandomId()}`;
     lastDetailsDiv.element = details;
+
     if (validated.numOfErrors === 0) {
         containerToBlur.classList.remove("container-noblur");
         containerToBlur.classList.add("container-blur");
         body.classList.toggle("stop-scrolling");
+
         if (!modal.classList.contains("modal-show")) {
             for (let input of inputs) {
                 formFields.push(
@@ -67,14 +85,17 @@ submitButton.addEventListener("click", (e) => {
                 );
             }
             modal.classList.add("modal-show");
-            /** Grab the data for each form field, create some new nodes for the modal body text and assign it all. **/
-            /** Then, add all the new span nodes into the modal submitted details div ***/
+            /*
+            Grab the data for each form field, create some new nodes for the modal body text and assign it all.
+            Then, add all the new span nodes into the modal submitted details div
+            */
             formFields.forEach(field => {
                 const fieldSpan = document.createElement("span");
                 const fieldId = field.fieldId.charAt(0).toUpperCase() + field.fieldId.substring(1);
                 const fieldText = field.value.charAt(0).toUpperCase() + field.value.substring(1);
-                fieldSpan.innerText = `${fieldId}: ${fieldText}`;
                 const lineBreak = document.createElement("br");
+
+                fieldSpan.innerText = `${fieldId}: ${fieldText}`;
                 fieldSpan.appendChild(lineBreak);
                 details.append(fieldSpan);
             })
@@ -84,11 +105,12 @@ submitButton.addEventListener("click", (e) => {
 });
 /** Modal Close Button **/
 const closeModalButton = document.getElementById("close-modal");
+
 closeModalButton.addEventListener("click", (e) => {
     e.preventDefault();
     const lastModalDetailsToRemove = document.getElementById("modal-submitted-details");
-    lastModalDetailsToRemove.removeChild(lastDetailsDiv.element); // Destroy the last details div to reset the modal
     const inputs = document.getElementsByClassName("readable-input");
+    lastModalDetailsToRemove.removeChild(lastDetailsDiv.element); // Destroy the last details div to reset the modal
     resetInputs(inputs);
     body.classList.toggle("stop-scrolling");
     containerToBlur.classList.remove("container-blur");
