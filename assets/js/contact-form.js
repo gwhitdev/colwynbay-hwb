@@ -24,7 +24,6 @@ const validateInput = (inputs) => {
                 )
                 messageToShow.numOfErrors += 1;
             }
-
         }
     }
     return messageToShow;
@@ -98,4 +97,3 @@ closeModalButton.addEventListener("click", (e) => {
     modal.classList.remove("modal-show");
     modal.classList.add('modal-hide')
 })
-
