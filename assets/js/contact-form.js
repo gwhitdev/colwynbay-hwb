@@ -27,7 +27,6 @@ const validateInput = (inputs) => {
 
         }
     }
-    console.log(messageToShow);
     return messageToShow;
 }
 const showOrHideErrors = (elements) => {
@@ -43,7 +42,6 @@ const resetInputs = (inputs) => {
     }
 }
 const lastDetailsDiv = {"element":null};
-
 submitButton.addEventListener("click", (e) => {
     e.preventDefault();
     const inputs = document.getElementsByClassName("readable-input");
