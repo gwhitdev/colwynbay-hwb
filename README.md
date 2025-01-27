@@ -2,7 +2,8 @@
 ## **Site Overview**
 The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a week, 52 days a year. It is a project in its early stages but has already made progress in developing services and opportunities for local people. However, as with most new ventures, publicity can be difficult to achieve - especially with limited charitable resources available. This website serves as a source of key information for current and new users of the Hwb. It is intended to be a well designed and easy to use lightweight publicity platform and portal.
 
-![Am I responsive screenshot](docs/screenshots/am-i-responsive.jpg)
+![Am I responsive screenshot](docs/screenshots/am-i-responsive.png)
+
 ## Table of contents:
 1. [**Site Overview**](#site-overview)
 1. [**Planning stage**](#planning-stage)
