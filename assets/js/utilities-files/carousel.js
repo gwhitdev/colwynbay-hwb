@@ -1,5 +1,5 @@
  /** Set slide index to 1 for the first slide **/
- let slideIndex = 1;
+ const slideIndex = {"count": 1};
  /** Attach directional arrows in the DOM to variables **/
  const previousArrow = document.getElementById("previousArrow");
  const nextArrow = document.getElementById("nextArrow");
@@ -7,12 +7,12 @@
  previousArrow.addEventListener("click", () => plusSides(-1));
  nextArrow.addEventListener("click", () => plusSides(1));
  /** Arrow functions for moving the slides forwards and backwards **/
- const plusSides = n => showSlides(slideIndex += n);
+ const plusSides = n => showSlides(slideIndex.count += n);
  /** Arrow function to load the slides and to show the first slide at load **/
  const showSlides = n => {
      const slides = document.getElementsByClassName("slides");
-     if (n > slides.length) slideIndex = 1;
-     if (n < 1) slideIndex = slides.length;
+     if (n > slides.length) slideIndex.count = 1;
+     if (n < 1) slideIndex.count = slides.length;
      for (let i = 0; i < slides.length; i++) {
          slides[i].style.display = "none";
      }
