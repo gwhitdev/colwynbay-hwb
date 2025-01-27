@@ -6,7 +6,7 @@
 #modal {
     position: fixed;
     bottom: 30%;
-    left: 25%;
+    left: 0%;
     width: auto;
     background-color: var(--cus-purple);
     box-shadow: 1px 1rem 1rem rgba(0, 0, 0, 0.5);
@@ -73,3 +73,20 @@
     display: flex;
 }
 
+@media screen and (min-width: 576px) {
+    #modal {
+        left: 1%;
+        width: 98%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+
+@media screen and (min-width: 1200px) {
+    #modal {
+        left: 33%;
+        width: auto;
+    }
+}
