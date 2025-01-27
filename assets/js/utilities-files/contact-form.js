@@ -53,7 +53,7 @@ const resetInputs = (inputs) => {
 }
 
 const lastDetailsDiv = {"element":null};
-
+const isModalOpenOrClosed = {modal:"closed"}; // Modal state
 submitButton.addEventListener("click", (e) => {
     e.preventDefault();
     const inputs = document.getElementsByClassName("readable-input");
@@ -85,6 +85,7 @@ submitButton.addEventListener("click", (e) => {
                 );
             }
             modal.classList.add("modal-show");
+            isModalOpenOrClosed.modal = "open";
             /*
             Grab the data for each form field, create some new nodes for the modal body text and assign it all.
             Then, add all the new span nodes into the modal submitted details div
@@ -105,9 +106,16 @@ submitButton.addEventListener("click", (e) => {
 });
 /** Modal Close Button **/
 const closeModalButton = document.getElementById("close-modal");
-
+/* If the close button is pressed on the modal, close the modal */
 closeModalButton.addEventListener("click", (e) => {
     e.preventDefault();
+    closeModal();
+});
+/* If the escape key is pressed on a keyboard, close the modal */
+document.addEventListener('keyup', (e) => {
+    if (e.key === "Escape" && isModalOpenOrClosed.modal === "open") closeModal();
+});
+const closeModal = () => {
     const lastModalDetailsToRemove = document.getElementById("modal-submitted-details");
     const inputs = document.getElementsByClassName("readable-input");
     lastModalDetailsToRemove.removeChild(lastDetailsDiv.element); // Destroy the last details div to reset the modal
@@ -117,4 +125,5 @@ closeModalButton.addEventListener("click", (e) => {
     containerToBlur.classList.add("container-noblur");
     modal.classList.remove("modal-show");
     modal.classList.add('modal-hide')
-})
+    isModalOpenOrClosed.modal = "closed";
+}
