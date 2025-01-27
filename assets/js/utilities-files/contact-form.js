@@ -6,7 +6,7 @@ const modal = document.getElementById("modal");
 const containerToBlur = document.getElementById("container");
 const body = document.getElementsByTagName("body")[0];
 
-const validateInput = (inputs) => {
+function validateInput (inputs){
     const messageToShow = [];
     messageToShow.numOfErrors = 0;
     const isPhoneNumberValid = phoneNumber => Number(phoneNumber) || phoneNumber.length === 11;
@@ -20,7 +20,7 @@ const validateInput = (inputs) => {
                 "state":  !isPhoneNumberValid(input.value) ? "show" : "hide", // Check if value is NaN or not the UK phone number length
             }
         )
-        !isPhoneNumberValid(input.value) ? incrementNumOfErrors() : null;
+        isPhoneNumberValid(input.value) === false ? incrementNumOfErrors() : null;
     }
 
     const validateTextInputs = input => {
@@ -28,7 +28,7 @@ const validateInput = (inputs) => {
             "div": `error-${input.id}`,
             "state": isInputAnEmptyString(input.value) ? "show" : "hide", // Decide on state of style:display value for element
         })
-        isInputAnEmptyString(input.value) ? incrementNumOfErrors() : null;
+        isInputAnEmptyString(input.value) === true ? incrementNumOfErrors() : null;
     }
 
     for (let input of inputs) {
@@ -53,7 +53,7 @@ const resetInputs = (inputs) => {
 }
 
 const lastDetailsDiv = {"element":null};
-const isModalOpenOrClosed = {modal:"closed"}; // Modal state
+const isModalOpenOrClosed = {"modal":"closed"}; // Modal state
 submitButton.addEventListener("click", (e) => {
     e.preventDefault();
     const inputs = document.getElementsByClassName("readable-input");
@@ -112,7 +112,7 @@ closeModalButton.addEventListener("click", (e) => {
     closeModal();
 });
 /* If the escape key is pressed on a keyboard, close the modal */
-document.addEventListener('keyup', (e) => {
+document.addEventListener("keyup", (e) => {
     if (e.key === "Escape" && isModalOpenOrClosed.modal === "open") closeModal();
 });
 const closeModal = () => {
@@ -124,6 +124,6 @@ const closeModal = () => {
     containerToBlur.classList.remove("container-blur");
     containerToBlur.classList.add("container-noblur");
     modal.classList.remove("modal-show");
-    modal.classList.add('modal-hide')
+    modal.classList.add("modal-hide")
     isModalOpenOrClosed.modal = "closed";
 }

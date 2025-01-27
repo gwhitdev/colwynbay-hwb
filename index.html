@@ -6,40 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Colwyn Bay Community Hwb and Foodbank">
     <!-- Preloads to reduce overall page load time -->
-    <link rel="preload" fetchpriority="high" as="image" href="assets/images/Sunset_over_Colwyn_Bay.webp">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link 
-        rel="prefetch" 
+    <link rel="preload" as="image" href="assets/images/Sunset_over_Colwyn_Bay.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+        rel="preload"
         crossorigin
         as="font"
         type="font/woff2"
         href="https://fonts.gstatic.com/s/londrinasolid/v17/flUhRq6sw40kQEJxWNgkLuudGfNeKBM.woff2"
-    />
-    <link 
-        rel="prefetch" 
+    >
+    <link
+        rel="preload"
         crossorigin
         as="font"
         type="font/woff2"
         href="https://fonts.gstatic.com/s/londrinasolid/v17/flUiRq6sw40kQEJxWNgkLuudGfv1CgYzlZw.woff2"
-    />
-    <link 
-        rel="prefetch" 
+    >
+    <link
+        rel="preload"
         crossorigin
         as="font"
         type="font/woff2"
         href="https://fonts.gstatic.com/s/fredoka/v14/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OryL8EemK.woff2"
-    />
-    <link 
-        rel="prefetch" 
+    >
+    <link
+        rel="preload"
         crossorigin
         as="font"
         type="font/woff2"
         href="https://fonts.gstatic.com/s/fredoka/v14/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OryL8H-mKpNk.woff2"
-    />
+    >
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/thankyou-modal.css">
     <!-- Title -->
@@ -56,11 +56,11 @@
         <!-- Navigation toggle -->
         <input type="checkbox" name="nav-toggle" id="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label">
-            <svg xmlns="http://www.w3.org/2000/svg" 
-                class="icon" 
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="icon"
                 viewBox="0 0 448 512">
                 <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+                <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"></path>
             </svg>
         </label>
         <!-- Navigation -->
@@ -263,11 +263,12 @@
                             <div>
                                 <label for="reason"><sup>*</sup>Message subject:</label>
                                 <select required id="reason" name="reason" class="readable-input">
-                                    <option selected name="Donating" value="Donating">Donating</option>
-                                    <option name="Room hire">Room hire</option>
-                                    <option name="Upcoming events">Upcoming events</option>
-                                    <option name="Foodbank">Foodbank</option>
-                                    <option name="Other">Other</option>
+                                    <option selected value="">Select a message subject</option>
+                                    <option value="Donating">Donating</option>
+                                    <option value="Room hire">Room hire</option>
+                                    <option value="Upcoming events">Upcoming events</option>
+                                    <option value="Foodbank">Foodbank</option>
+                                    <option value="Other">Other</option>
                                 </select>
                                 <div style="display:none" class="errors" id="error-reason">Please choose a message subject.</div>
                             </div>
@@ -290,7 +291,10 @@
         <footer>
                 <div class="social">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page">
-                    <svg id="facebook-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                    <svg id="facebook-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"></path>
+                    </svg>
                 </a>
                 </div>
                 <div id="imprint">
@@ -322,7 +326,7 @@
         </div>
     </div>
     <!-- Utilities JS module that imports various other JS files -->
-    <script src="./assets/js/utilities.js" type="module" defer></script>
+    <script src="./assets/js/utilities.js" type="module"></script>
 </body>
 
 </html>
