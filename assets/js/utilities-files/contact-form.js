@@ -8,10 +8,10 @@ const body = document.getElementsByTagName("body")[0];
 
 function validateInput (inputs){
     const messageToShow = [];
-    messageToShow.numOfErrors = 0;
     const isPhoneNumberValid = phoneNumber => Number(phoneNumber) || phoneNumber.length === 11;
     const isInputAnEmptyString = text => text === "";
     const incrementNumOfErrors = () => messageToShow.numOfErrors += 1;
+    messageToShow.numOfErrors = 0;
 
     const validatePhoneNumberInput = input => {
         messageToShow.push(
@@ -22,7 +22,6 @@ function validateInput (inputs){
         )
         isPhoneNumberValid(input.value) === false ? incrementNumOfErrors() : null;
     }
-
     const validateTextInputs = input => {
         messageToShow.push({
             "div": `error-${input.id}`,
@@ -30,7 +29,6 @@ function validateInput (inputs){
         })
         isInputAnEmptyString(input.value) === true ? incrementNumOfErrors() : null;
     }
-
     for (let input of inputs) {
         if (input.id) validateTextInputs(input);
         if (input.id && input.id === "phone") validatePhoneNumberInput(input);
@@ -44,16 +42,15 @@ const showOrHideErrors = (elements) => {
         if (element.state === "hide") document.getElementById(element.div).style.display = "none";
     })
 }
-
 const resetInputs = (inputs) => {
     for (let input of inputs) {
         if (input.id === "reason") input.value = "Donating";
         else input.value = "";
     }
 }
-
 const lastDetailsDiv = {"element":null};
 const isModalOpenOrClosed = {"modal":"closed"}; // Modal state
+
 submitButton.addEventListener("click", (e) => {
     e.preventDefault();
     const inputs = document.getElementsByClassName("readable-input");
@@ -74,7 +71,6 @@ submitButton.addEventListener("click", (e) => {
         containerToBlur.classList.remove("container-noblur");
         containerToBlur.classList.add("container-blur");
         body.classList.toggle("stop-scrolling");
-
         if (!modal.classList.contains("modal-show")) {
             for (let input of inputs) {
                 formFields.push(
@@ -104,6 +100,7 @@ submitButton.addEventListener("click", (e) => {
         }
     }
 });
+
 /** Modal Close Button **/
 const closeModalButton = document.getElementById("close-modal");
 /* If the close button is pressed on the modal, close the modal */
