@@ -1,4 +1,6 @@
-
+hr:first-of-type {
+    display: none;
+}
 /* Generic sections */
 #events, #regular-groups, #room-hire {
     padding-top: 3rem;
