@@ -44,10 +44,9 @@ function validateInput (inputs){
 }
 
 const showOrHideErrors = (elements) => {
-    elements.forEach(element => {
-        if (element.state === "show") document.getElementById(element.div).style.display = "block";
-        if (element.state === "hide") document.getElementById(element.div).style.display = "none";
-    })
+    elements.forEach(element => element.state === "show"
+        ? document.getElementById(element.div).style.display = "block"
+        : document.getElementById(element.div).style.display = "none");
 }
 
 const resetInputs = (inputs) => {
