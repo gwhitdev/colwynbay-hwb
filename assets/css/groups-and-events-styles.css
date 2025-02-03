@@ -13,7 +13,7 @@ hr:first-of-type {
 
 /* Events */
 #events {
-    color: white;
+    color: #FFFFFF;
 }
 
 /* Cards */
@@ -33,7 +33,7 @@ hr:first-of-type {
 }
 .card {
     margin-bottom: 3rem;
-    border-bottom: 1px dashed white;
+    border-bottom: 1px dashed #FFFFFF;
     padding-bottom: 2rem;
     padding-left: 0.5rem;
 }
@@ -70,10 +70,10 @@ hr:first-of-type {
 
 /* Room hire */
 #room-hire {
-    color: white;
+    color: #FFFFFF;
 }
 #room-hire a, #room-hire a:active, #room-hire a:visited {
-    color: white;
+    color: #FFFFFF;
     text-decoration: underline;
 }
 #room-hire a:hover {
@@ -98,12 +98,12 @@ footer {
     align-items: center;
     flex-direction: row;
     margin-top: 3rem;
-    color: white;
+    color: #FFFFFF;
 }
 
 #facebook-logo {
     width: 3rem;
-    fill: white;
+    fill: #FFFFFF;
     margin: 0 3rem;
 }
 #imprint {

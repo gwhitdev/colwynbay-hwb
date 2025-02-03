@@ -24,11 +24,11 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--cus-purple);
-    color: white;
+    color: #FFFFFF;
     font-size: 2rem;
 }
 a {
-    color: white;
+    color: #FFFFFF;
 }
 a:hover {
     text-decoration: none;
@@ -55,22 +55,22 @@ a:hover {
     margin-top: 2rem;
 }
 #home-button {
-    color: white;
+    color: #FFFFFF;
     background-color: transparent;
     padding: 1rem 1.25rem;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid #FFFFFF;
     font-size: 2.25rem;
 }
 #home-button:hover {
     color: var(--cus-purple);
-    background-color: white;
+    background-color: #FFFFFF;
     transform: rotate(10deg);
 }
 #home-button:active {
-    border: 1px solid white;
-    color: white;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
     background-color: var(--cus-purple);
 }
 

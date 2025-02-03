@@ -90,7 +90,7 @@ nav {
     display: none;
     left: 0;
     width: 100vw;
-    background-color: white;
+    background-color: #FFFFFF;
     top: 100%;
 }
 #menu {
@@ -139,7 +139,7 @@ nav {
 }
 #cover-title {
     font-size: 2.75rem;
-    color: white;
+    color: #FFFFFF;
     line-height: 2.25rem;
     padding: 1.5rem 0;
     font-family: var(--solid-primary-font);
