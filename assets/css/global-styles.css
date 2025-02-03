@@ -45,7 +45,7 @@ body {
     background-color: var(--cus-purple);
 }
 a, a:visited, a:active {
-    color: var(--cus-purple);
+    color: var(--text-dark-purple);
 }
 a:hover {
     text-decoration: underline;

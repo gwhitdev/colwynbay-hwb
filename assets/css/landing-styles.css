@@ -58,6 +58,7 @@
     display: none;
     width: 100%;
     height: 200px;
+    align-items: end;
 }
 #nextArrow, #previousArrow {
     position: absolute;
@@ -67,7 +68,7 @@
     padding: 1rem;
     color: #FFFFFF;
     font-weight: bold;
-    box-shadow: black 0px 0px 1.5rem;
+    box-shadow: black 0 0 1.5rem;
     background-color: rgba(201, 66, 178, 0.658);
 }
 #nextArrow {
@@ -109,7 +110,25 @@
 #slide-6 {
     background: url('../images/wooden-trains.jpg') no-repeat center center / cover;
 }
-
+.slide-caption {
+    background: rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    width: 100%;
+    height: 50px;
+    position: relative;
+    color: white;
+    text-align: right;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: #000 1rem 1rem 2rem;
+}
+.slide-caption span {
+    z-index: 100;
+    font-size: 1.1rem;
+    font-style: italic;
+}
 /* Latest News */
 #latest-news {
     width: 100%;
@@ -161,6 +180,7 @@
 #welcome-message-details hr {
     border-color: #FFFFFF;
 }
+
 /* Foodbank and Donations */
 #foodbank {
     background-color: var(--cus-purple-rgb);
@@ -224,7 +244,7 @@ input:focus,
 select:focus,
 textarea:focus {
     box-shadow: 0 0 3px black;
-    outline-offset: 0px;
+    outline-offset: 0;
     outline: none;
 }
 #contact-form label {
