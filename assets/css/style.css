@@ -240,13 +240,13 @@ nav {
 
 /* Carousel Image Slides */
 #slide-1 {
-    background: url('../images/468324613_122267218016002860_3882894567622170301_n.webp') no-repeat center center / cover;
+    background: url('../images/food-box.jpg') no-repeat center center / cover;
 }
 #slide-2 {
-    background: url('../images/454735621_122240727518002860_7492894630105984710_n.webp') no-repeat center center / cover;
+    background: url('../images/choir.jpg') no-repeat center center / cover;
 }
 #slide-3 {
-    background: url('../images/469111474_122269146176002860_1941981137026856415_n.webp') no-repeat center center / cover;
+    background: url('../images/pumpkins.jpg') no-repeat center center / cover;
 }
 
 /* Latest News */
