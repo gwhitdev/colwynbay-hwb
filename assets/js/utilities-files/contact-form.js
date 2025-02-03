@@ -13,6 +13,10 @@ function validateInput (inputs){
     const incrementNumOfErrors = () => messageToShow.numOfErrors += 1;
     messageToShow.numOfErrors = 0;
 
+    const validateEmail = input => {
+
+    }
+
     const validatePhoneNumberInput = input => {
         messageToShow.push(
             {
