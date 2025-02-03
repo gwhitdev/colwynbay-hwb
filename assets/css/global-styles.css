@@ -61,8 +61,6 @@ a:hover {
     flex-direction: row;
 }
 
-
-
 /* Header */
 header {
     background-color: #ffffff;
@@ -146,4 +144,9 @@ nav {
     padding: 1.5rem 0;
     font-family: var(--solid-primary-font);
     font-weight: 400;
+}
+hr {
+    border: 0;
+    border-bottom: 3px dashed var(--cus-orange);
+    width: 100%;
 }
