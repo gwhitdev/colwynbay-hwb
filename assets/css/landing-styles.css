@@ -1,5 +1,3 @@
-
-
 /* Welcome Message */
 #welcome-message {
     width: 100%;
@@ -101,6 +99,15 @@
 }
 #slide-3 {
     background: url('../images/pumpkins.jpg') no-repeat center center / cover;
+}
+#slide-4 {
+    background: url('../images/food.jpg') no-repeat center center / cover;
+}
+#slide-5 {
+    background: url('../images/vip.jpg') no-repeat center center / cover;
+}
+#slide-6 {
+    background: url('../images/wooden-trains.jpg') no-repeat center center / cover;
 }
 
 /* Latest News */
