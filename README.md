@@ -163,23 +163,26 @@ The Welcome section provides basic information about the Hwb along with opening 
 
 #### *Carousel*
 ![Carousel](docs/screenshots/carousel.png 'Carousel')
-The image carousel showcases some of the events and activities that take plan around the Hwb. The carousel is operated
+
+The image carousel showcases to the user some of the events and activities that take plan around the Hwb. The carousel is operated
 by using the 'left' and 'right' arrow buttons located either side of the carousel feature.
 
 #### *Latest News*
 ![Latest News section](docs/screenshots/latest-news.png 'Latest News')
-The Latest News section provides important and exciting updates that the Hwb and its people would like to share.
+
+The Latest News section provides the user with important and exciting updates that the Hwb and its people would like to share.
 The news is presented in a card format. The cards are responsive for different viewport sizes and presents more or less
 cards to fit the screen.
 
 #### *Foodbank information*
 ![Foodank information](docs/screenshots/foodbank.png 'Foodbank information')
 
-The Foodbank section gives general information about how to access the foodbank and signposts the user to 
+The Foodbank section gives general information to the user about how to access the foodbank and signposts the user to 
 the contact form for further information or questions.
 
 #### *Donations information*
 ![Donations information](docs/screenshots/donations.png 'Donations information')
+
 The donations section presents high level information about the types of donations that the Hwb can accept
 and how people can provide them with signposting links to the contact form for more information.
 
