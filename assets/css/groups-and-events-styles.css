@@ -203,7 +203,7 @@ footer {
         flex-direction: row;
    }
    
-    /* Regular Evemts */
+    /* Regular Events */
     #events-cards, #groups-cards {
         display: flex;
         flex-direction: row;

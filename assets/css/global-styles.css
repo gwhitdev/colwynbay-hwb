@@ -16,6 +16,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    font-display: swap;
 }
 h1,
 h2,
@@ -121,13 +122,6 @@ nav {
 }
 
 /* Hero */
-.hero {
-    width: 100%;
-    height: 350px;
-    background: url('../images/Sunset_over_Colwyn_Bay.webp') no-repeat center center / cover;
-    position: relative;
-
-}
 #cover-text {
     background-color: rgba(var(--cus-purple-rgb),0.6);
     position: absolute;

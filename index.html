@@ -1,9 +1,7 @@
 <!-- TODO: Resize carousel images for responsiveness -->
-<!-- TODO: Re-optimise hero image -->
 <!-- TODO: Validate HTML -->
 <!-- TODO: Validate CSS -->
 <!-- TODO: Validate JS -->
-<!-- TODO: Rename hero image -->
 <!-- TODO: Go through each page and validate formatting of code -->
 
 <!DOCTYPE html>
@@ -14,43 +12,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Colwyn Bay Community Hwb and Foodbank">
     <!-- Preloads to reduce overall page load time -->
-    <link rel="preload" as="image" href="assets/images/Sunset_over_Colwyn_Bay.webp">
+    <link rel="preload" as="image" href="assets/images/sunset.webp" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin >
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-    <link
-        rel="preload"
-        crossorigin
-        as="font"
-        type="font/woff2"
-        href="https://fonts.gstatic.com/s/londrinasolid/v17/flUhRq6sw40kQEJxWNgkLuudGfNeKBM.woff2"
-    >
-    <link
-        rel="preload"
-        crossorigin
-        as="font"
-        type="font/woff2"
-        href="https://fonts.gstatic.com/s/londrinasolid/v17/flUiRq6sw40kQEJxWNgkLuudGfv1CgYzlZw.woff2"
-    >
-    <link
-        rel="preload"
-        crossorigin
-        as="font"
-        type="font/woff2"
-        href="https://fonts.gstatic.com/s/fredoka/v14/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OryL8EemK.woff2"
-    >
-    <link
-        rel="preload"
-        crossorigin
-        as="font"
-        type="font/woff2"
-        href="https://fonts.gstatic.com/s/fredoka/v14/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OryL8H-mKpNk.woff2"
-    >
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap">
+    <link rel="preload" as="style" href="assets/css/global-styles.css">
+    <link rel="preload" as="style" href="assets/css/landing-styles.css">
+    <link rel="preload" as="style" href="assets/css/thankyou-modal.css">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap">
     <link rel="stylesheet" href="assets/css/global-styles.css">
     <link rel="stylesheet" href="assets/css/landing-styles.css">
     <link rel="stylesheet" href="assets/css/thankyou-modal.css">
+    <style>
+        /* Inline critical CSS to reduce mobile LCP*/
+        .hero {
+            width: 100%;
+            height: 50vh;
+            background: url('assets/images/sunset.webp') no-repeat center center / cover;
+            position: relative;
+        }
+    </style>
     <!-- Title -->
     <title>Colwyn Bay Community Hwb and Foodbank</title>
 </head>
@@ -339,7 +320,7 @@
         </div>
     </div>
     <!-- Utilities JS module that imports various other JS files -->
-    <script src="./assets/js/utilities.js" type="module"></script>
+    <script src="./assets/js/utilities.js" type="module" defer></script>
 </body>
 
 </html>
