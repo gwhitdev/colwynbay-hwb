@@ -1,9 +1,3 @@
-<!-- TODO: Resize carousel images for responsiveness -->
-<!-- TODO: Validate HTML -->
-<!-- TODO: Validate CSS -->
-<!-- TODO: Validate JS -->
-<!-- TODO: Go through each page and validate formatting of code -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Colwyn Bay Community Hwb and Foodbank">
     <!-- Preloads to reduce overall page load time -->
-    <link rel="preload" as="image" href="assets/images/sunset.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="assets/images/sunset.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin >
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-    <link rel="preload" as="style" href="assets/css/global-styles.css">
-    <link rel="preload" as="style" href="assets/css/landing-styles.css">
-    <link rel="preload" as="style" href="assets/css/thankyou-modal.css">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Londrina+Solid:wght@300;400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap">
     <link rel="stylesheet" href="assets/css/global-styles.css">
     <link rel="stylesheet" href="assets/css/landing-styles.css">
     <link rel="stylesheet" href="assets/css/thankyou-modal.css">
@@ -48,7 +40,7 @@
         <label for="nav-toggle" class="nav-toggle-label">
             <svg xmlns="http://www.w3.org/2000/svg"
                 class="icon"
-                viewBox="0 0 448 512">
+                viewBox="0 0 448 512" role="img" aria-label="Navigation menu icon">
                 <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"></path>
             </svg>
@@ -135,7 +127,19 @@
                     <div class="news-title">Local Park Renovation Project Completed</div>
                     <div class="news-date">4 January 2025</div>
                     <div class="news-image">
-                        <img src="assets/images/news/eirias_park.webp" aria-label="Local Park Renovation Project Completed" alt="Local Park Renovation Project Completed: Photo by Kampus Production: https://www.pexels.com/photo/food-on-the-picnic-blanket-7669122/">
+                        <img
+                            srcset="assets/images/news/eirias-park-575w.webp 575w,
+                                assets/images/news/eirias-park-796w.webp 796w,
+                                assets/images/news/eirias-park-1194w.webp 1194w"
+                            sizes="(min-width: 1560px) calc(33.06vw - 60px),
+                                (min-width: 1200px) calc(7.06vw + 341px),
+                                (min-width: 1060px) calc(50vw - 68px),
+                                (min-width: 780px) calc(10vw + 348px),
+                                (min-width: 560px) calc(100vw - 96px),
+                                calc(7.5vw + 404px)"
+                            src="assets/images/news/eirias-park.webp"
+                            aria-label="Local Park Renovation Project Completed"
+                            alt="Local Park Renovation Project Completed: Photo by Kampus Production: https://www.pexels.com/photo/food-on-the-picnic-blanket-7669122/">
                     </div>
                     <div class="news-snippet">
                         The long-awaited renovation of Eirias Park has been completed. The park now features new playground equipment, a modernized picnic area, and improved walking trails. The community is invited to a grand reopening event on 20 January 2025, which will include a ribbon-cutting ceremony, live music, and family-friendly activities.
@@ -145,7 +149,21 @@
                     <div class="news-title">Community Garden Initiative Blossoms</div>
                     <div class="news-date">20 December 2024</div>
                     <div class="news-image">
-                        <img src="assets/images/news/community_garden.webp" aria-label="Community Garden Initiative Blossoms" alt="Community Garden Initiative Blossoms: Photo by Kampus Production: https://www.pexels.com/photo/smiling-woman-harvesting-lettuce-7658794/">
+                        <img
+                            srcset="assets/images/news/community-garden-575w.webp 575w,
+                                assets/images/news/community-garden-850w.webp 850w,
+                                assets/images/news/community-garden-1275w.webp 1275w,
+                                assets/images/news/community-garden-1600w.webp 1600w,
+                                assets/images/news/community-garden-1860w.webp 1860w"
+                            sizes="(min-width: 1560px) calc(33.06vw - 60px),
+                                (min-width: 1200px) calc(7.06vw + 341px),
+                                (min-width: 1060px) calc(50vw - 68px),
+                                (min-width: 780px) calc(10vw + 348px),
+                                (min-width: 560px) calc(100vw - 96px),
+                                calc(7.5vw + 404px)"
+                            src="assets/images/news/community_garden.webp"
+                            aria-label="Community Garden Initiative Blossoms"
+                            alt="Community Garden Initiative Blossoms: Photo by Kampus Production: https://www.pexels.com/photo/smiling-woman-harvesting-lettuce-7658794/">
                     </div>
                     <div class="news-snippet">
                         The community garden initiative, started last spring, has seen tremendous growth. Local residents have come together to plant a variety of fruits, vegetables, and flowers. The garden not only provides fresh produce but also serves as a gathering place for neighbors to connect and share gardening tips. Volunteers are always welcome to join the effort, with the next planting day scheduled for February 15, 2025.
@@ -155,7 +173,15 @@
                     <div class="news-title">Annual Charity Run Raises Record Funds</div>
                     <div class="news-date">10 December 2024</div>
                     <div class="news-image">
-                        <img src="assets/images/news/charity_run.webp" aria-label="Annual Charity Run Raises Record Funds" alt="Annual Charity Run Raises Record Funds: Photo by RUN 4 FFWPU: https://www.pexels.com/photo/girl-wearing-red-and-yellow-top-running-2168291/">
+                        <img
+                                srcset="assets/images/news/charity-run-575w.webp 575w,
+                                    assets/images/news/charity-run-1010w.webp 1010w,
+                                    assets/images/news/charity-run-1515w.webp 1515w,
+                                    assets/images/news/charity-run-1860w.webp 1860w"
+                                sizes="(min-width: 1800px) calc(33vw - 58px), (min-width: 780px) 490px, (min-width: 640px) calc(100vw - 96px), 491px"
+                                src="assets/images/news/charity-run.webp"
+                                aria-label="Annual Charity Run Raises Record Funds"
+                                alt="Annual Charity Run Raises Record Funds: Photo by RUN 4 FFWPU: https://www.pexels.com/photo/girl-wearing-red-and-yellow-top-running-2168291/">
                     </div>
                     <div class="news-snippet">
                         This year's annual charity run broke previous records, raising over £50,000 for local shelters. Participants of all ages took part in the 5K and 10K races, with many dressing up in creative costumes. The event organizers expressed their gratitude to the community for their overwhelming support and generosity. The run took place on March 10, 2025, along the scenic coastal route.
@@ -165,7 +191,22 @@
                     <div class="news-title">New Art Exhibit Showcases Local Talent</div>
                     <div class="news-date">23 November 2024</div>
                     <div class="news-image">
-                        <img src="assets/images/news/exhibition.webp" aria-label="New Art Exhibit Showcases Local Talent" alt="New Art Exhibit Showcases Local Talent: Photo by ¶Project Atlas: https://www.pexels.com/photo/three-paintings-hanging-in-gallery-1674049/">
+                        <img
+                                srcset="assets/images/news/exhibition-379w.webp 379w,
+                                    assets/images/news/exhibition-575w.webp 575w,
+                                    assets/images/news/exhibition-758w.webp 758w,
+                                    assets/images/news/exhibition-1137w.webp 1137w,
+                                    assets/images/news/exhibition-1420w.webp 1420w,
+                                    assets/images/news/exhibition-1650w.webp 1650w,
+                                    assets/images/news/exhibition-1860w.webp 1860w"
+                                sizes="(min-width: 1440px) calc(33.01vw - 58px),
+                                    (min-width: 1200px) calc(14.09vw + 210px),
+                                    (min-width: 960px) calc(50vw - 68px),
+                                    (min-width: 780px) calc(13.75vw + 273px),
+                                    (min-width: 500px) calc(100vw - 96px), 373px"
+                                src="assets/images/news/exhibition.webp"
+                                aria-label="New Art Exhibit Showcases Local Talent"
+                                alt="New Art Exhibit Showcases Local Talent: Photo by ¶Project Atlas: https://www.pexels.com/photo/three-paintings-hanging-in-gallery-1674049/">
                     </div>
                     <div class="news-snippet">
                         The Colwyn Bay Hwb is hosting a new art exhibit featuring works by local artists. The exhibit includes paintings, sculptures, and mixed media pieces that reflect the diverse talents and perspectives of the community. The exhibit will be open to the public from April 5, 2025, for the next two months, with special events and artist talks scheduled throughout.
@@ -175,7 +216,21 @@
                     <div class="news-title">Youth Sports League Kicks Off Season</div>
                     <div class="news-date">1 May 2024</div>
                     <div class="news-image">
-                        <img src="assets/images/news/sports_league.webp" aria-label="Youth Sports League Kicks Off Season" alt="Youth Sports League Kicks Off Season: Photo by Laura Rincón: https://www.pexels.com/photo/women-s-soccer-match-on-a-sunny-day-outdoors-30199725/">
+                        <img
+                                srcset="assets/images/news/sports-league-575w.webp 575w,
+                                    assets/images/news/sports-league-796w.webp 796w,
+                                    assets/images/news/sports-league-1194w.webp 1194w,
+                                    assets/images/news/sports-league-1560w.webp 1560w,
+                                    assets/images/news/sports-league-1860w.webp 1860w"
+                                sizes="(min-width: 1480px) calc(33.03vw - 59px),
+                                    (min-width: 1200px) calc(9.62vw + 283px),
+                                    (min-width: 1000px) calc(50vw - 68px),
+                                    (min-width: 780px) calc(12vw + 304px),
+                                    (min-width: 520px) calc(100vw - 96px),
+                                    389px"
+                                src="assets/images/news/sports-league.webp"
+                                aria-label="Youth Sports League Kicks Off Season"
+                                alt="Youth Sports League Kicks Off Season: Photo by Laura Rincón: https://www.pexels.com/photo/women-s-soccer-match-on-a-sunny-day-outdoors-30199725/">
                     </div>
                     <div class="news-snippet">
                         The youth sports league has kicked off its new season with a series of exciting matches. Teams from various age groups are competing in soccer, basketball, and baseball. The league aims to promote physical activity, teamwork, and sportsmanship among young athletes. The season opener took place on May 1, 2024, at the Colwyn Bay Sports Complex. Parents and community members are encouraged to come out and support the teams.
@@ -185,7 +240,15 @@
                     <div class="news-title">Community Clean-Up Day a Huge Success </div>
                     <div class="news-date">7 June 2024</div>
                     <div class="news-image">
-                        <img src="assets/images/news/cleanup_day.webp" aria-label="Community Clean-Up Day a Huge Success " alt="Community Clean-Up Day a Huge Success: Photo by Ron Lach : https://www.pexels.com/photo/man-and-woman-holding-hands-while-walking-on-forest-9543405/">
+                        <img
+                                srcset="assets/images/news/cleanup-day-575w.webp 575w,
+                                    assets/images/news/cleanup-day-852w.webp 852w,
+                                    assets/images/news/cleanup-day-1278w.webp 1278w,
+                                    assets/images/news/cleanup-day-1600w.webp 1600w,
+                                    assets/images/news/cleanup-day-1860w.webp 1860w"
+                                sizes="(min-width: 1560px) calc(33.06vw - 60px), (min-width: 1200px) calc(7.06vw + 341px), (min-width: 1060px) calc(50vw - 68px), (min-width: 780px) calc(10vw + 348px), (min-width: 560px) calc(100vw - 96px), calc(7.5vw + 404px)"                                src="assets/images/news/cleanup-day.webp"
+                                aria-label="Community Clean-Up Day a Huge Success"
+                                alt="Community Clean-Up Day a Huge Success: Photo by Ron Lach : https://www.pexels.com/photo/man-and-woman-holding-hands-while-walking-on-forest-9543405/">
                     </div>
                     <div class="news-snippet">
                         Last weekend's community clean-up day was a huge success, with dozens of volunteers coming together to pick up litter, plant trees, and beautify public spaces. The event was organized by the local environmental group and received support from several local businesses. The clean-up day took place on 7 June 2024, and organizers plan to make this an annual event to keep the community clean and green.
@@ -320,7 +383,7 @@
         </div>
     </div>
     <!-- Utilities JS module that imports various other JS files -->
-    <script src="./assets/js/utilities.js" type="module" defer></script>
+    <script src="./assets/js/utilities.js" type="module"></script>
 </body>
 
 </html>

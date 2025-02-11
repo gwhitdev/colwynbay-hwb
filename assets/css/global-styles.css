@@ -5,7 +5,6 @@
     --cus-purple-rgb: 119, 82, 142;
     --cus-orange-rgb: 242, 146, 34;
     --solid-primary-font: "Londrina Solid", sans-serif;
-    --primary-font: "Londrina Shadow", sans-serif;
     --secondary-font: "Fredoka", sans-serif;
     --text-dark-purple: #250147;
 }
@@ -16,7 +15,6 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
-    font-display: swap;
 }
 h1,
 h2,

@@ -294,29 +294,97 @@ Below is a list of bugs I found during the development process by testing myself
    - **Fix**: Set the parent hero element's height as a 50% proportion of the view height.
 
 ## Post Development Testing
-I have used the following tools to test the website for accessibility and performance:-
-- Google Chrome DevTools Lighthouse
-- W3C Markup Validation Service
-- W3C CSS Validation Service
-- 
+I have used the following tools to test the website for accessibility and performance.
+
+Various actions were taken to improve the website's performance and accessibility. These include:
+
+- Resizing images to improve responsiveness
+- Optimising images and converting to webp format where possible
+- Ensuring JavaScript and CSS import tags are correctly located in the HTML
+- Prefetching and preloading resources - reducing the time it takes to load the page
+- Using inline CSS to load the hero image on each page to reduce the page rendering time
+- Using SVG images instead of fetching Font Awesome icons - reducing the number of web requests
+
+Some minor issues remain such as the loading of Google Fonts - this is outside my control.
+Further image optimisation could be considered to improve rendering speed for mobile devices. 
+The server responsiveness of GitHub Pages also impacts the scoring to varying degrees depending on 
+global usage, again, this is outside my control. If the website were to be handed-over to the Hwb it would 
+need to be hosted on a dedicated server for better performance.
+
+### Google Chrome DevTools Lighthouse
+*Local Development Server: Landing Page (Mobile)*
+![Local development server - Landing Page](docs/screenshots/lighthouse-local-mobile-landingpage.png)
+
+*Local Development Server: Events and Groups Page (Mobile)*
+![Local development server - Events and Groups Page](docs/screenshots/lighthouse-local-mobile-eventsandgroups.png)
+
+*Local Development Server: Landing Page (Desktop)*
+![Local development server - Landing Page](docs/screenshots/lighthouse-local-desktop-landingpage.png)
+
+*Local Development Server: Events and Groups Page (Desktop)*
+![Local development server - Events and Groups Page](docs/screenshots/lighthouse-local-desktop-eventsandgroupspage.png)
+
+*GitHub Pages: Landing Page (Mobile)*
+![GitHub Pages - Landing Page](docs/screenshots/lighthouse-github-mobile-landingpage.png)
+
+*GitHub Pages: Events and Groups Page (Mobile)*
+![GitHub Pages - Events and Groups Page](docs/screenshots/lighthouse-github-mobile-eventsandgroups.png)
+
+
+### [W3C Markup Validation Service](https://validator.w3.org/nu/)
+Both index.html and groups-and-events.html have been validated without any errors or warnings.
+
+### [W3C CSS Validation Service (JigSaw)](https://jigsaw.w3.org/css-validator/)
+I used the W3C CSS validator to check the stylesheets that I have created.
+
+Each of the stylesheets passed validation with no errors or warnings except that CSS variables cannot be statically checked.
+
+![CSS validated](docs/vcss.png)
+
+### WAVE - Web Accessibility Evaluation Tool
+
 ***
 ## **Deployment**
 
 ***
 ## **Credits**
+### Stock Images
+*Events*
+- Craft Workshop: Photo by cottonbro studio: https://www.pexels.com/photo/two-women-making-a-sculpture-6694743/
+- Cooking Class: Photo by Maarten van den Heuvel: https://www.pexels.com/photo/person-holding-sliced-vegetable-2284166/
+- Outdoor Treasure Hunt: Photo by RDNE Stock project: https://www.pexels.com/photo/st-patrick-s-day-props-in-tilt-shift-lens-7080498/
+- Science Fair: Photo by Vanessa Loring: https://www.pexels.com/photo/a-girl-in-plaid-long-sleeves-holding-battery-operated-toy-7869079/
+- Family Yoga: Photo by Valeria Ushakova: https://www.pexels.com/photo/woman-wearing-white-sleeveless-top-3094230/
+- Story telling: Photo by Lina Kivaka: https://www.pexels.com/photo/woman-reading-book-to-toddler-1741231/
+- Board Game Tournament: Photo by Tima Miroshnichenko: https://www.pexels.com/photo/light-hands-people-table-6598746/
+- Picnic in the park: Photo by Helena Lopes: https://www.pexels.com/photo/group-of-people-sitting-on-white-mat-on-grass-field-745045/
+- Music Concert: Photo by Martin Lopez: https://www.pexels.com/photo/smiling-man-standing-and-dancing-near-smiling-woman-surrounded-with-people-2240771/
+- Holiday Craft Fair: Photo by cottonbro studio: https://www.pexels.com/photo/two-women-making-a-sculpture-6694743/
+- Family Dance Party: Photo by Ralph Bossingham: https://www.pexels.com/photo/a-girl-surrounded-by-confetti-15661565/
+ 
+*Groups*
+- Yoga for beginners: Photo by Mel Audelo: https://www.pexels.com/photo/women-practicing-yoga-indoors-for-wellness-28558808/
+- Book Club: Photo by Helena Lopes: https://www.pexels.com/photo/group-of-people-reading-book-sitting-on-chair-711009/
+- Art and Craft Workshop: Photo by Antoni Shkraba: https://www.pexels.com/photo/a-woman-painting-on-a-canvas-4442005/
+- Cooking Class: Photo by cottonbro studio: https://www.pexels.com/photo/men-standing-near-a-table-full-of-vegetables-6822587/
+- Tech Help Drop-in: Photo by Marcus Aurelius: https://www.pexels.com/photo/woman-in-red-blazer-sitting-by-the-table-having-a-meeting-4063791/
+
+*Carousel*
+- Images taken from the Hwb's Facebook page
+
+
 ### **Thank yous**
 
 * [Richard Wells](https://github.com/D0nni387) - Code Institute Mentor who has gone above and beyond what was expected of him to help me get this far in the course.
 
 
-### **References:**
+### **References**
+
 
 
 ### **Content:**
 * Icons were borrowed from [Font Awesome](https://fontawesome.com)
-* The golden gradient colour scheme - [brandgradients.com](http://www.brandgradients.com/gold-gradient).
 * All fonts imported from - [Google Fonts](https://fonts.google.com/)
-* Accessibility checker - [WAVE - Web accessibility evaluation tool](https://wave.webaim.org/)
   
 ### **Media:**
 
