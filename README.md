@@ -330,7 +330,16 @@ Each of the stylesheets passed validation with no errors or warnings except that
 ***Deployed groups-and-events.html***
 
 [![CSS validated](docs/vcss.png)](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fgwhitdev.github.io%2Fcolwynbay-hwb%2Fgroups-and-events.html&usermedium=all&vextwarning=&warning=1)
+
 ### WAVE - Web Accessibility Evaluation Tool
+I have tested all the website's pages for accessibility using the WAVE evaluation tool. The only error that was shown was
+related to the nav toggle button not having a label. This is because the button is an SVG icon (image). After researching,
+I learned of the 'role' attribute that can be used to provide a label for the button with an additional aria-label.
+I have added this to the SVG icon across the site.
+
+The tool now shows no errors or warnings.
+
+![WAVE evaluation](docs/screenshots/wave-landing-page.png)
 
 ***
 ## **Deployment**
