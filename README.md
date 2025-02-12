@@ -99,8 +99,9 @@ an orange and a purple depending on their position in the pattern.
 Each section is split with a horizontal rule that also acts as an anchor point for navigation, making each section of information
 clearer for the user.
 
-
 ![Colourful sections](docs/screenshots/section-colours.png)
+
+The 404 error page uses a basic and clear layout to inform the user that the page they are looking for does not exist.
 
 ### **Footer**
 ![Footer](docs/screenshots/footer.png)
@@ -200,8 +201,12 @@ offers an attractive design.
 The Room Hire section provides the user with basic information about which rooms are available for hire.
 There is also a link to the contact form to enquire about booking.
 
-
 ![Room hire section](docs/screenshots/roomhire.png)
+
+### **404 Page**
+The 404 page is a simple page that informs the user that the page they are looking for does not exist.
+There is a link to the landing page so that the user can easily navigate back to the main site.
+![404 error page](docs/screenshots/404-page.png)
 
 ## **Future Enhancements**
 This website has the potential for various new features and enhancements. I have written them below in the form of user stories for clarity.
