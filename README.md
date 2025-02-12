@@ -330,21 +330,49 @@ I have used the following tools to test the website for accessibility and perfor
 *GitHub Pages: Events and Groups Page (Desktop)*
 ![GitHub Pages - Events and Groups Page](docs/screenshots/lighthouse-github-desktop-eventsandgroupspage.png)
 
+*GitHub Pages: 404 Error Page (Mobile)*
+![GitHub Pages - 404 Error Page](docs/screenshots/lighthouse-github-mobile-404-page.png)
+
+*GitHub Pages: 404 Error Page (Desktop)*
+![GitHub Pages - 404 Error Page](docs/screenshots/lighthouse-github-desktop-404-page.png)
+
+The Lighthouse score for the 404 error page is subject to the fact that the page is a simple error page with no additional content and, 
+by its nature, is displayed as the result of an error. Therefore,the Best Practices and SEO scores are more difficult to 
+achieve a high score on. For example, the console shows an error related to the GET request not being found. I also cannot
+test the 404 error page locally as it requires a more advanced development server setup than the standard Python server.
+
 ### [W3C Markup Validation Service](https://validator.w3.org/nu/)
 Both index.html and groups-and-events.html have been validated without any errors or warnings.
+
+The 404.html page presented with a warning for the presence of a closing ```<p>``` tag without an opening tag.
+I have changed the ```<p>``` to a ```<div>``` tag.
+This provides a better HTML structure and resolves the warning.
 
 ### [W3C CSS Validation Service (JigSaw)](https://jigsaw.w3.org/css-validator/)
 I used the W3C CSS validator to check the stylesheets that I have created.
 
 Each of the stylesheets passed validation with no errors or warnings except that CSS variables cannot be statically checked.
 
-***Deployed index.html***
+***GitHub Pages global-styles.css***
 
-[![CSS validated](docs/vcss.png)](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fgwhitdev.github.io%2Fcolwynbay-hwb%2F&usermedium=all&vextwarning=&warning=1)
+[![CSS validated](docs/vcss.png)](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fgwhitdev.github.io%2Fcolwynbay-hwb%2Fassets%2Fcss%2Fglobal-styles.css.css&usermedium=all&vextwarning=&warning=1)
 
-***Deployed groups-and-events.html***
+***GitHub Pages landing-styles.css***
 
-[![CSS validated](docs/vcss.png)](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fgwhitdev.github.io%2Fcolwynbay-hwb%2Fgroups-and-events.html&usermedium=all&vextwarning=&warning=1)
+[![CSS validated](docs/vcss.png)](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fgwhitdev.github.io%2Fcolwynbay-hwb%2Fassets%2Fcss%2Flanding-styles.css&usermedium=all&vextwarning=&warning=1)
+
+***GitHub Pages groups-and-events.css***
+
+[![CSS validated](docs/vcss.png)](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fgwhitdev.github.io%2Fcolwynbay-hwb%2Fassets%2Fcss%2Fgroups-and-events-styles.css&usermedium=all&vextwarning=&warning=1)
+
+***GitHub Pages thankyou-modal.css***
+
+[![CSS validated](docs/vcss.png)](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fgwhitdev.github.io%2Fcolwynbay-hwb%2Fassets%2Fcss%2Fthankyou-modal.css&usermedium=all&vextwarning=&warning=1)
+
+***GitHub Pages 404-page.css***
+
+[![CSS validated](docs/vcss.png)](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fgwhitdev.github.io%2Fcolwynbay-hwb%2Fassets%2Fcss%2F404-page-style.css&usermedium=all&vextwarning=&warning=1)
+
 
 ### WAVE - Web Accessibility Evaluation Tool
 I have tested all the website's pages for accessibility using the WAVE evaluation tool. The only error that was shown was
@@ -359,6 +387,9 @@ The tool now shows no errors or warnings.
 
 *Events and Regular Groups Page*:
 ![WAVE evaluation for events and groups page](docs/screenshots/wave-events-and-groups.png)
+
+*404 Error Page*:
+![WAVE evaluation for 404 error page](docs/screenshots/wave-404-page.png)
 
 ***
 ## **Deployment**
