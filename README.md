@@ -312,8 +312,13 @@ need to be hosted on a dedicated server for better performance.
 ![GitHub Pages - Landing Page](docs/screenshots/lighthouse-github-mobile-landingpage.png)
 
 *GitHub Pages: Events and Groups Page (Mobile)*
-![GitHub Pages - Events and Groups Page](docs/screenshots/lighthouse-github-mobile-eventsandgroups.png)
+![GitHub Pages - Events and Groups Page](docs/screenshots/lighthouse-github-mobile-eventsandgroupspage.png)
 
+*GitHub Pages: Landing Page (Desktop)*
+![GitHub Pages - Landing Page](docs/screenshots/lighthouse-github-desktop-landingpage.png)
+
+*GitHub Pages: Events and Groups Page (Desktop)*
+![GitHub Pages - Events and Groups Page](docs/screenshots/lighthouse-github-desktop-eventsandgroupspage.png)
 
 ### [W3C Markup Validation Service](https://validator.w3.org/nu/)
 Both index.html and groups-and-events.html have been validated without any errors or warnings.
@@ -339,7 +344,11 @@ I have added this to the SVG icon across the site.
 
 The tool now shows no errors or warnings.
 
-![WAVE evaluation](docs/screenshots/wave-landing-page.png)
+*Landing Page*:
+![WAVE evaluationfor landing page](docs/screenshots/wave-landing-page.png)
+
+*Events and Regular Groups Page*:
+![WAVE evaluation for events and groups page](docs/screenshots/wave-events-and-groups.png)
 
 ***
 ## **Deployment**
@@ -362,6 +371,7 @@ You can find the live site via the following URL: [Colwyn Bay Hwb](https://gwhit
   
 ### Stock Images
 *Events*
+- Family Movie Night Event - Photo by Tima Miroshnichenko: https://www.pexels.com/photo/hand-getting-popcorn-in-yellow-tumbler-7991531/
 - Craft Workshop: Photo by cottonbro studio: https://www.pexels.com/photo/two-women-making-a-sculpture-6694743/
 - Cooking Class: Photo by Maarten van den Heuvel: https://www.pexels.com/photo/person-holding-sliced-vegetable-2284166/
 - Outdoor Treasure Hunt: Photo by RDNE Stock project: https://www.pexels.com/photo/st-patrick-s-day-props-in-tilt-shift-lens-7080498/
