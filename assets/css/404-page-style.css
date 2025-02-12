@@ -7,7 +7,7 @@ body {
     color: #FFFFFF;
     font-size: 2rem;
 }
-a {
+a, a:visited, a:active {
     color: #FFFFFF;
 }
 a:hover {
