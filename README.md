@@ -5,23 +5,7 @@ The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a
 ![Am I responsive screenshot](docs/screenshots/am-i-responsive.png)
 
 ## Table of contents:
-1. [**Site Overview**](#site-overview)
-1. [**Planning stage**](#planning-stage)
-    * [***Target Audiences***](#target-audiences)
-    * [***User Stories***](#user-stories)
-    * [***Site Aims***](#site-aims)
-    * [***How Is This Will Be Achieved:***](#how-is-this-will-be-achieved)
-    * [***Wireframes***](#wireframes)
-    * [***Colour Scheme***](#Colour-scheme)
-1. [**Current Features Common to all pages**](#current-features-common-to-all-pages)
-1. [**Future-Enhancements**](#future-enhancements)
-1. [**Testing Phase**](#testing-phase)
-1. [**Deployment**](#deployment)
-1. [**Credits**](#credits)
-    * [**Honorable mentions**](#honorable-mentions)
-    * [**General reference**](#general-reference)
-    * [**Content**](#content)
-    * [**Media**](#media)
+
 
 ## **Planning stage**
 ### **Target Audiences:**
@@ -339,15 +323,34 @@ I used the W3C CSS validator to check the stylesheets that I have created.
 
 Each of the stylesheets passed validation with no errors or warnings except that CSS variables cannot be statically checked.
 
-![CSS validated](docs/vcss.png)
+***Deployed index.html***
 
+[![CSS validated](docs/vcss.png)](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fgwhitdev.github.io%2Fcolwynbay-hwb%2F&usermedium=all&vextwarning=&warning=1)
+
+***Deployed groups-and-events.html***
+
+[![CSS validated](docs/vcss.png)](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fgwhitdev.github.io%2Fcolwynbay-hwb%2Fgroups-and-events.html&usermedium=all&vextwarning=&warning=1)
 ### WAVE - Web Accessibility Evaluation Tool
 
 ***
 ## **Deployment**
+I deployed the page on GitHub pages via the following procedure:
+
+1. Navigate to the GitHub repository.
+2. Go to the Settings tab.
+3. From the left-hand menu, select the Pages tab.
+4. Under the Build and Deployment section and then the Source section, select the Main branch from the drop-down menu and click Save.
+5. A message will be displayed to indicate that the deployment to GitHub Pages has been successful.
+
+You can find the live site via the following URL: [Colwyn Bay Hwb](https://gwhitdev.github.io/colwynbay-hwb/)
 
 ***
 ## **Credits**
+
+### **Content:**
+* Icons were borrowed from [Font Awesome](https://fontawesome.com)
+* All fonts imported from - [Google Fonts](https://fonts.google.com/)
+  
 ### Stock Images
 *Events*
 - Craft Workshop: Photo by cottonbro studio: https://www.pexels.com/photo/two-women-making-a-sculpture-6694743/
@@ -361,7 +364,7 @@ Each of the stylesheets passed validation with no errors or warnings except that
 - Music Concert: Photo by Martin Lopez: https://www.pexels.com/photo/smiling-man-standing-and-dancing-near-smiling-woman-surrounded-with-people-2240771/
 - Holiday Craft Fair: Photo by cottonbro studio: https://www.pexels.com/photo/two-women-making-a-sculpture-6694743/
 - Family Dance Party: Photo by Ralph Bossingham: https://www.pexels.com/photo/a-girl-surrounded-by-confetti-15661565/
- 
+
 *Groups*
 - Yoga for beginners: Photo by Mel Audelo: https://www.pexels.com/photo/women-practicing-yoga-indoors-for-wellness-28558808/
 - Book Club: Photo by Helena Lopes: https://www.pexels.com/photo/group-of-people-reading-book-sitting-on-chair-711009/
@@ -372,30 +375,19 @@ Each of the stylesheets passed validation with no errors or warnings except that
 *Carousel*
 - Images taken from the Hwb's Facebook page
 
+*Tools*
+- Images requiring compression were done using: [tiny.png](https://tinypng.com)
+- Screenshot under README.md section titled "site overview" was created with [Am I responsive](https://ui.dev/amiresponsive?url=https://gwhitdev.github.io/colwynbay-hwb/)
+- Colour grid contract tool: [Eightshapes](https://contrast-grid.eightshapes.com/)
+- Image Lint used to check responsive image: [Image Lint](https://imagelint.com/)
+- GitHub ImageBot was also used to optimise some images.
 
-### **Thank yous**
+### Other:
+- Original inspiration for the carousel feature: [W3Schools](https://www.w3schools.com/howto/howto_js_slideshow.asp)
 
-* [Richard Wells](https://github.com/D0nni387) - Code Institute Mentor who has gone above and beyond what was expected of him to help me get this far in the course.
+### Thank you
 
+- [Richard Wells](https://github.com/D0nni387) - Code Institute Mentor who has gone above and beyond what was expected of him to help me get this far in the course.
+- Fellow students on the Code Institute course who have provided feedback and support.
 
-### **References**
-
-
-
-### **Content:**
-* Icons were borrowed from [Font Awesome](https://fontawesome.com)
-* All fonts imported from - [Google Fonts](https://fonts.google.com/)
-  
-### **Media:**
-
-* Images requiring compression were done using - [tiny.png](https://tinypng.com) 
-
-* Screenshot under README.md section titled "site overview" was created view [Am I responsive](https://ui.dev/amiresponsive?url=https://gwhitdev.github.io/colwynbay-hwb/)
-
-* Colour grid contract tool - [Eightshapes](https://contrast-grid.eightshapes.com/) 
-
-* Calculator used to resize figure images -[Aspect Ratio Calculator](https://andrew.hedges.name/experiments/aspect_ratio/)
-
-### **Other*:*
-* Original inspiration for the carousel feature: [W3Schools](https://www.w3schools.com/howto/howto_js_slideshow.asp)
 
