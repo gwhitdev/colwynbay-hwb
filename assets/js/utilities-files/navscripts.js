@@ -17,8 +17,10 @@ function detectInView() {
     // The isInViewPort function was written with help from StackOverflow regarding how to grab the top and bottom distance from the getBoundingClientRec function and apply that to some logic
     const isInViewPort = (section) => {
         const distance = section.getBoundingClientRect();
+        //console.log(distance.bottom,window.innerHeight)
+        //console.log(document.documentElement.clientHeight)
         return (
-            distance.top >= 0 &&
+            
             distance.bottom <= (window.innerHeight || document.documentElement.clientHeight)
         );
     };
@@ -35,4 +37,4 @@ function detectInView() {
     }
 }
 window.addEventListener("scroll", detectInView); // Listen to the scrolling event on the window object
-detectInView(); // Execute straight away to detect where the viewport is and highlight the correct anchor tag text in the nav menu
+detectInView(); // Execute straight away to detect where the    viewport is and highlight the correct anchor tag text in the nav menu

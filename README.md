@@ -278,9 +278,9 @@ Below is a list of bugs I found during the development process by testing myself
    - **Fix**: Set the parent hero element's height as a 50% proportion of the view height.
 
 ## Post Development Testing
-I have used the following tools to test the website for accessibility and performance.
+Various actions were taken to improve the website's performance and accessibility.
 
-Various actions were taken to improve the website's performance and accessibility. These include:
+These include:
 
 - Resizing images to improve responsiveness
 - Optimising images and converting to webp format where possible
@@ -294,6 +294,8 @@ Further image optimisation could be considered to improve rendering speed for mo
 The server responsiveness of GitHub Pages also impacts the scoring to varying degrees depending on 
 global usage, again, this is outside my control. If the website were to be handed-over to the Hwb it would 
 need to be hosted on a dedicated server for better performance.
+
+I have used the following tools to test the website for accessibility and performance.
 
 ### Google Chrome DevTools Lighthouse
 *Local Development Server: Landing Page (Mobile)*
