@@ -1,24 +1,4 @@
-/* Variables */
-:root {
-    --cus-purple: #77528E;
-    --solid-primary-font: "Londrina Solid", sans-serif;
-    --secondary-font: "Fredoka", sans-serif;
-}
-
-/* Globals */
-html {
-    scroll-behavior: smooth;
-}
-h1 {
-    font-family: var(--solid-primary-font);
-    font-size: 4rem;
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body { 
+body {
     min-height: 100vh;
     font-family: var(--secondary-font);
     display: flex;
@@ -73,7 +53,6 @@ a:hover {
     color: #FFFFFF;
     background-color: var(--cus-purple);
 }
-
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
