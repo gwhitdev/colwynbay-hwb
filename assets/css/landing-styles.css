@@ -290,7 +290,8 @@ textarea:focus {
 }
 
 .errors {
-    color: red;
+    color: #FFF;
+    text-shadow: #000 1px 1px 2px;
     font-weight: bold;
     font-size: 1rem;
 }
