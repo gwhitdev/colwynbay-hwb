@@ -275,7 +275,10 @@ Below is a list of bugs I found during the development process by testing myself
    the user's scroll position. This then applies the correct styling to the navigation bar.
 7. **Expected behaviour**: The hero image and text overlay should responsively change size in a consistent way depending on the user's viewport.
    - **Actual behaviour**: The hero image and text changes size inconsistently.
-   - **Fix**: Set the parent hero element's height as a 50% proportion of the view height.
+   - **Fix**: Set the parent hero element's height as a 50% proportion of the view height.#
+8. **Expected behaviour**: The navigation bar links are highlighted and stay highlighted for the correct section when scrolling.
+   - **Actual behaviour**: The navigation bar links are highlighted but in some cases the active class is misapplied when scrolling.
+   - **Fix**: Remove distance.top from the JavaScript logic - this would always show true.
 
 ## Post Development Testing
 Various actions were taken to improve the website's performance and accessibility.
