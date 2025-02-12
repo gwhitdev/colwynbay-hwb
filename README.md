@@ -470,6 +470,7 @@ You can find the live site via the following URL: [Colwyn Bay Hwb](https://gwhit
 - Colour grid contract tool: [Eightshapes](https://contrast-grid.eightshapes.com/)
 - Image Lint used to check responsive image: [Image Lint](https://imagelint.com/)
 - GitHub ImageBot was also used to optimise some images.
+- Browserling.com was used to test the site on the Safari browser.
 
 ### Other:
 - Original inspiration for the carousel feature: [W3Schools](https://www.w3schools.com/howto/howto_js_slideshow.asp)
