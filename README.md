@@ -1,11 +1,33 @@
-# **Colwyn Bay Hwb**
-## **Site Overview**
-The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a week, 52 days a year. It is a project in its early stages but has already made progress in developing services and opportunities for local people. However, as with most new ventures, publicity can be difficult to achieve - especially with limited charitable resources available. This website serves as a source of key information for current and new users of the Hwb. It is intended to be a well designed and easy to use lightweight publicity platform and portal.
-
+# **Colwyn Bay Hwb and Foodbank**
 ![Am I responsive screenshot](docs/screenshots/am-i-responsive.png)
 
-## Table of contents:
-
+## Contents:
+1. [Site Overview](#site-overview)
+2. [Planning stage](#planning-stage)
+    - [Target Audiences](#target-audiences)
+    - [User Stories](#user-stories)
+    - [Site Aims](#site-aims)
+    - [How this will be achieved](#how-this-will-be-achieved)
+    - [Wireframes](#wireframes)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+    - [Structure](#structure)
+3. [Features](#features)
+4. [Future Enhancements](#future-enhancements)
+5. [Testing Phase](#testing-phase)
+    - [Bugs and Fixes](#bugs-and-fixes)
+    - [Post Development Testing](#post-development-testing)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
+    - [Content](#content)
+    - [Stock Images](#stock-images)
+    - [Tools](#tools)
+    - [Other](#other)
+    - [Thank you](#thank-you)
+    
+   
+## **Site Overview**
+The Colwyn Bay Community Hwb and Foodbank is a new community space open 7 days a week, 52 days a year. It is a project in its early stages but has already made progress in developing services and opportunities for local people. However, as with most new ventures, publicity can be difficult to achieve - especially with limited charitable resources available. This website serves as a source of key information for current and new users of the Hwb. It is intended to be a well designed and easy to use lightweight publicity platform and portal.
 
 ## **Planning stage**
 ### **Target Audiences:**
@@ -67,6 +89,11 @@ The logo doesn't lend itself well to being used within the typical navigation ba
 ![Hwb Logo](assets/images/hwb_logo.webp)
 
 ![Colour contrast grid](docs/screenshots/contrast-grid-v2.png "Colour contrast grid") 
+
+## **Typography**
+The fonts used have been selected and imported from Google.
+- Londrina Solid: for all main headings and the logotype in the header navbar
+- Fredoka: for all other text including links and navbar text
 
 ## **Structure**
 ###  **Header Element**
@@ -227,14 +254,6 @@ As a user, I would like an app that accepts room bookings so that I can book a r
 *Content Management System*: As the site owner, I would like a system for creating and updating content, so that I can maintain the website and keep it up to date.
 
 ***
-
-## **Typography**
-The fonts used have been selected and imported from Google.
-- Londrina Solid: for all main headings and the logotype in the header navbar
-- Fredoka: for all other text including links and navbar text
-
-
-***
 ## **Testing Phase**
 During the development process, I have manually tested as well as used various automated testing tools.
 
@@ -255,6 +274,7 @@ During testing, I used five different browsers to ensure cross-compatibility.
 
 I have also used the Chrome DevTools to simulate different screen sizes/devices from 320 px up to 4000px in width.
 
+*** 
 
 ## Bugs and Fixes:
 Below is a list of bugs I found during the development process by testing myself via the live server extension on VSCode. I tried each element for how the browser would display the page to potential users on a range of different screen widths from 320px to 4000px:-
@@ -444,7 +464,7 @@ You can find the live site via the following URL: [Colwyn Bay Hwb](https://gwhit
 *Carousel*
 - Images taken from the Hwb's Facebook page
 
-*Tools*
+### *Tools*
 - Images requiring compression were done using: [tiny.png](https://tinypng.com)
 - Screenshot under README.md section titled "site overview" was created with [Am I responsive](https://ui.dev/amiresponsive?url=https://gwhitdev.github.io/colwynbay-hwb/)
 - Colour grid contract tool: [Eightshapes](https://contrast-grid.eightshapes.com/)
