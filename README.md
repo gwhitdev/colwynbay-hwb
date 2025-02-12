@@ -370,6 +370,15 @@ You can find the live site via the following URL: [Colwyn Bay Hwb](https://gwhit
 * All fonts imported from - [Google Fonts](https://fonts.google.com/)
   
 ### Stock Images
+*Latest News*
+- Local Park Renovation Project Completed: Photo by Kampus Production: https://www.pexels.com/photo/food-on-the-picnic-blanket-7669122/
+- Community Garden Initiative Blossoms: Photo by Kampus Production: https://www.pexels.com/photo/smiling-woman-harvesting-lettuce-7658794/
+- Annual Charity Run Raises Record Funds: Photo by RUN 4 FFWPU: https://www.pexels.com/photo/girl-wearing-red-and-yellow-top-running-2168291/
+- New Art Exhibit Showcases Local Talent: Photo by ¶Project Atlas: https://www.pexels.com/photo/three-paintings-hanging-in-gallery-1674049/
+- Youth Sports League Kicks Off Season: Photo by Laura Rincón: https://www.pexels.com/photo/women-s-soccer-match-on-a-sunny-day-outdoors-30199725/
+- Community Clean-Up Day a Huge Success: Photo by Ron Lach : https://www.pexels.com/photo/man-and-woman-holding-hands-while-walking-on-forest-9543405/
+- 
+
 *Events*
 - Family Movie Night Event - Photo by Tima Miroshnichenko: https://www.pexels.com/photo/hand-getting-popcorn-in-yellow-tumbler-7991531/
 - Craft Workshop: Photo by cottonbro studio: https://www.pexels.com/photo/two-women-making-a-sculpture-6694743/
